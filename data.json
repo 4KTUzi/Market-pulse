@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-28T10:27:55Z",
-  "next_update_at": "2026-10-28T10:57:55Z",
+  "generated_at": "2026-10-28T10:32:47Z",
+  "next_update_at": "2026-10-28T11:02:47Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 +0.60%, Nasdaq +1.18%, Dow Jones +0.03% at the last close or live price. VIX is 17.6 (calm). Biggest watchlist move: Tesla +4.04%. Bitcoin +2.4% over 24h, Ethereum +2.9%. Crypto Fear & Greed: 51 (Neutral). 5 of 40 recent headlines are flagged as possible market movers. High-impact events today (UTC): Annual Budget Release; FOMC Statement; Federal Funds Rate.",
+  "snapshot": "US stocks: S&P 500 +0.60%, Nasdaq +1.18%, Dow Jones +0.03% at the last close or live price. VIX is 17.6 (calm). Biggest watchlist move: Tesla +4.04%. Bitcoin +2.4% over 24h, Ethereum +2.8%. Crypto Fear & Greed: 51 (Neutral). 5 of 40 recent headlines are flagged as possible market movers. High-impact events today (UTC): Annual Budget Release; FOMC Statement; Federal Funds Rate.",
   "calendar": [
     {
       "title": "Annual Budget Release",
@@ -301,11 +301,11 @@
     {
       "symbol": "^VIX",
       "name": "VIX (fear gauge)",
-      "price": 17.58,
-      "change": 0.06,
-      "change_pct": 0.34,
+      "price": 17.55,
+      "change": 0.03,
+      "change_pct": 0.17,
       "currency": "USD",
-      "as_of": "2026-10-28T10:12:46Z",
+      "as_of": "2026-10-28T10:17:31Z",
       "spark": [
         16.07,
         16.04,
@@ -329,7 +329,7 @@
         19.45,
         18.39,
         17.52,
-        17.58
+        17.55
       ]
     }
   ],
@@ -374,7 +374,7 @@
       "change": 0.08,
       "change_pct": 0.08,
       "currency": "USD",
-      "as_of": "2026-10-28T10:17:51Z",
+      "as_of": "2026-10-28T10:22:43Z",
       "spark": [
         101.2,
         101.37,
@@ -404,11 +404,11 @@
     {
       "symbol": "CL=F",
       "name": "Crude oil",
-      "price": 101.63,
-      "change": 1.73,
-      "change_pct": 1.73,
+      "price": 101.68,
+      "change": 1.78,
+      "change_pct": 1.78,
       "currency": "USD",
-      "as_of": "2026-10-28T10:17:50Z",
+      "as_of": "2026-10-28T10:22:28Z",
       "spark": [
         92.6,
         89.38,
@@ -432,17 +432,17 @@
         103.27,
         101.76,
         99.9,
-        101.63
+        101.68
       ]
     },
     {
       "symbol": "GC=F",
       "name": "Gold",
-      "price": 4063.2,
-      "change": -11.4,
-      "change_pct": -0.28,
+      "price": 4060.6,
+      "change": -14.0,
+      "change_pct": -0.34,
       "currency": "USD",
-      "as_of": "2026-10-28T10:17:50Z",
+      "as_of": "2026-10-28T10:22:43Z",
       "spark": [
         4168.4,
         4179.7,
@@ -466,7 +466,7 @@
         4007.9,
         4038.4,
         4074.6,
-        4063.2
+        4060.6
       ]
     }
   ],
@@ -708,11 +708,11 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 81425,
-      "change_24h": 2.39,
+      "price": 81420,
+      "change_24h": 2.36,
       "change_7d": -2.08,
-      "market_cap": 1637441429194,
-      "volume_24h": 24015460470,
+      "market_cap": 1636997123016,
+      "volume_24h": 24028891662,
       "spark": [
         83355.5787,
         83768.3833,
@@ -762,11 +762,11 @@
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2367.06,
-      "change_24h": 2.9,
+      "price": 2366.84,
+      "change_24h": 2.81,
       "change_7d": -3.34,
-      "market_cap": 289294143168,
-      "volume_24h": 9782701123,
+      "market_cap": 289189229051,
+      "volume_24h": 9780610700,
       "spark": [
         2453.7815,
         2471.8174,
@@ -816,11 +816,11 @@
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 103.0,
-      "change_24h": 3.71,
+      "price": 103.04,
+      "change_24h": 3.53,
       "change_7d": -3.49,
-      "market_cap": 60765797090,
-      "volume_24h": 2121041188,
+      "market_cap": 60786171754,
+      "volume_24h": 2119850840,
       "spark": [
         106.541,
         106.6895,
@@ -871,10 +871,10 @@
       "symbol": "XRP",
       "name": "XRP",
       "price": 1.33,
-      "change_24h": 2.83,
+      "change_24h": 2.71,
       "change_7d": -1.31,
-      "market_cap": 84184403423,
-      "volume_24h": 1589294866,
+      "market_cap": 84164460551,
+      "volume_24h": 1598580400,
       "spark": [
         1.3554,
         1.3574,
@@ -924,11 +924,11 @@
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 755.77,
-      "change_24h": 2.92,
+      "price": 754.17,
+      "change_24h": 2.54,
       "change_7d": 0.93,
-      "market_cap": 99387440953,
-      "volume_24h": 923072359,
+      "market_cap": 99204633088,
+      "volume_24h": 926012445,
       "spark": [
         747.2841,
         744.9805,
@@ -978,11 +978,11 @@
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.080319,
-      "change_24h": 4.65,
+      "price": 0.080328,
+      "change_24h": 4.45,
       "change_7d": -1.72,
-      "market_cap": 12573550709,
-      "volume_24h": 524334374,
+      "market_cap": 12571522154,
+      "volume_24h": 524039347,
       "spark": [
         0.0819,
         0.0821,
@@ -1041,6 +1041,24 @@
   },
   "news": [
     {
+      "title": "The real way to tell if Amazon\u2019s AI spending is paying off",
+      "url": "https://www.marketwatch.com/story/the-real-way-to-tell-if-amazons-ai-spending-is-paying-off-42a8a637?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-10-28T10:30:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Ten people confirmed dead in high-speed Spain train crash, local media report",
+      "url": "https://www.cnbc.com/2026/10/28/spain-high-speed-train-crash.html",
+      "source": "CNBC",
+      "published": "2026-10-28T10:29:56Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
       "title": "Four reasons to start worrying about inflation \u2014 including the end of tariff refunds",
       "url": "https://www.marketwatch.com/story/four-reasons-to-start-worrying-about-inflation-including-the-end-of-tariff-refunds-978a5cfd?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1057,15 +1075,6 @@
       "url": "https://www.cnbc.com/2026/10/28/stellantis-45-billion-cash-drain-turnaround.html",
       "source": "CNBC",
       "published": "2026-10-28T10:18:19Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Ten people confirmed dead in high-speed Spain train crash, local media report",
-      "url": "https://www.cnbc.com/2026/10/28/spain-high-speed-train-crash.html",
-      "source": "CNBC",
-      "published": "2026-10-28T10:13:58Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -1390,15 +1399,6 @@
       "watch": false
     },
     {
-      "title": "As Trump touts energy companies\u2019 fortunes, U.S. consumers face the most expensive year for gas prices ever",
-      "url": "https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-10-27T21:29:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "VanEck launches diversified ETF combining stocks, bonds and Bitcoin exposure",
       "url": "https://cointelegraph.com/news/vaneck-launches-diversified-etf-combining-stocks-bonds-and-bitcoin-exposure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "source": "Cointelegraph",
@@ -1455,8 +1455,6 @@
       "watch": false
     }
   ],
-  "errors": [
-    "Calendar feed unavailable (HTTPError)"
-  ],
+  "errors": [],
   "stale_sections": []
 }
