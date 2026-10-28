@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 UA = "Mozilla/5.0 (compatible; MarketPulse/1.0)"
-REFRESH_HOURS = 6
+REFRESH_MINUTES = 30
 
 # --------------------------------------------------------------------------
 # CONFIG - change these lists to track different things
@@ -63,6 +63,21 @@ FEEDS = [
 MAX_NEWS_AGE_HOURS = 72
 MAX_PER_SOURCE = 10
 MAX_NEWS_TOTAL = 45
+
+# Economic calendar: free weekly feed (unofficial, ForexFactory-style data).
+CALENDAR_URLS = [
+    "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
+    "https://nfs.faireconomy.media/ff_calendar_nextweek.json",
+]
+CALENDAR_COUNTRIES = {"USD", "EUR", "GBP", "JPY", "CNY"}  # add "AED", "CAD", ... if you like
+CALENDAR_IMPACTS = {"High", "Medium"}                      # add "Low" for everything
+CALENDAR_DAYS_AHEAD = 7
+# US Fed rate decisions (announced 2:00 pm New York time on the last day of each
+# meeting). Source: Federal Reserve 2026 FOMC calendar. Update once a year.
+FOMC_DECISION_DATES = [
+    "2026-01-28", "2026-03-18", "2026-04-29", "2026-06-17",
+    "2026-07-29", "2026-09-16", "2026-10-28", "2026-12-09",
+]
 
 # Keyword rules used to tag headlines. This is a simple heuristic, not analysis.
 TAG_RULES = {
@@ -302,9 +317,78 @@ def fetch_news(errors):
 
 
 # --------------------------------------------------------------------------
+# economic calendar (weekly JSON feed + known Fed decision dates)
+# --------------------------------------------------------------------------
+def parse_calendar_item(raw):
+    """Turn one feed entry into our format, or None if it should be skipped."""
+    country = (raw.get("country") or "").upper()
+    impact = (raw.get("impact") or "").strip().capitalize()
+    title = strip_html(raw.get("title"))
+    if not title or country not in CALENDAR_COUNTRIES or impact not in CALENDAR_IMPACTS:
+        return None
+    when = parse_time(raw.get("date"))
+    if not when:
+        return None
+    return {
+        "title": title,
+        "country": country,
+        "time": iso(when),
+        "impact": impact,
+        "forecast": (raw.get("forecast") or "").strip() or None,
+        "previous": (raw.get("previous") or "").strip() or None,
+    }
+
+
+def fomc_events(now):
+    from zoneinfo import ZoneInfo
+    ny = ZoneInfo("America/New_York")
+    out = []
+    for d in FOMC_DECISION_DATES:
+        y, m, day = (int(x) for x in d.split("-"))
+        when = datetime(y, m, day, 14, 0, tzinfo=ny)
+        out.append({"title": "FOMC interest rate decision", "country": "USD", "time": iso(when),
+                    "impact": "High", "forecast": None, "previous": None, "source": "Federal Reserve schedule"})
+    return out
+
+
+def fetch_calendar(errors):
+    now = now_utc()
+    start = now - timedelta(hours=14)        # keep earlier events from "today" on screen
+    end = now + timedelta(days=CALENDAR_DAYS_AHEAD)
+    events = []
+    for url in CALENDAR_URLS:
+        try:
+            for raw in get_json(url):
+                ev = parse_calendar_item(raw)
+                if ev:
+                    events.append(ev)
+        except Exception as e:  # noqa: BLE001
+            errors.append("Calendar feed unavailable (%s)" % type(e).__name__)
+            break
+    try:
+        have_fomc_days = {e["time"][:10] for e in events if re.search(r"fomc|federal funds rate", e["title"], re.I)}
+        for ev in fomc_events(now):
+            if ev["time"][:10] not in have_fomc_days:
+                events.append(ev)
+    except Exception as e:  # noqa: BLE001
+        errors.append("Fed dates unavailable (%s)" % type(e).__name__)
+
+    seen, out = set(), []
+    for ev in sorted(events, key=lambda e: (e["time"], e["title"])):
+        key = (ev["time"], ev["title"], ev["country"])
+        if key in seen:
+            continue
+        seen.add(key)
+        t = parse_time(ev["time"])
+        if start <= t <= end:
+            out.append(ev)
+    return out[:80]
+
+
+# --------------------------------------------------------------------------
 # plain-English snapshot built from the numbers above
 # --------------------------------------------------------------------------
-def build_snapshot(indices, watch, coins, fng, news):
+def build_snapshot(indices, watch, coins, fng, news, calendar=None):
     parts = []
     by = {q["symbol"]: q for q in indices}
     idx = [by[s] for s in ("^GSPC", "^IXIC", "^DJI") if s in by]
@@ -329,6 +413,12 @@ def build_snapshot(indices, watch, coins, fng, news):
     flagged = sum(1 for n in news if n["watch"])
     if news:
         parts.append("%d of %d recent headlines are flagged as possible market movers." % (flagged, len(news)))
+    if calendar:
+        # "Today" here is the UTC day; the page itself groups events by the viewer's local day.
+        today = now_utc().strftime("%Y-%m-%d")
+        high = [e for e in calendar if e["time"][:10] == today and e["impact"] == "High"]
+        if high:
+            parts.append("High-impact events today (UTC): " + "; ".join(e["title"] for e in high[:3]) + ".")
     return " ".join(parts)
 
 
@@ -386,11 +476,24 @@ def demo_data():
         news.append({"title": "[Sample] " + t, "url": "#", "source": src,
                      "published": iso(now - timedelta(hours=2 * i + 1)), "topic": topic,
                      "tags": tags, "watch": watch_flag})
+    cal_rows = [
+        (-3, "Sample: ISM Services PMI", "USD", "Medium", "52.0", "51.5"),
+        (2, "Sample: Crude Oil Inventories", "USD", "Medium", "-1.2M", "0.8M"),
+        (5, "Sample: FOMC interest rate decision", "USD", "High", "4.50%", "4.50%"),
+        (26, "Sample: ECB President speaks", "EUR", "Medium", None, None),
+        (28, "Sample: Core PCE Price Index m/m", "USD", "High", "0.2%", "0.3%"),
+        (50, "Sample: Non-Farm Payrolls", "USD", "High", "150K", "142K"),
+        (52, "Sample: Unemployment Rate", "USD", "High", "4.1%", "4.1%"),
+        (74, "Sample: GDP q/q", "GBP", "Medium", "0.3%", "0.2%"),
+    ]
+    calendar = [{"title": t, "country": c, "time": iso(now + timedelta(hours=h)), "impact": i,
+                 "forecast": f, "previous": p} for h, t, c, i, f, p in cal_rows]
     data = {
         "demo": True,
-        "generated_at": iso(now), "next_update_at": iso(now + timedelta(hours=REFRESH_HOURS)),
-        "refresh_hours": REFRESH_HOURS,
-        "snapshot": build_snapshot(indices, watch, coins, {"value": 55, "label": "Neutral"}, news),
+        "generated_at": iso(now), "next_update_at": iso(now + timedelta(minutes=REFRESH_MINUTES)),
+        "refresh_minutes": REFRESH_MINUTES,
+        "calendar": calendar,
+        "snapshot": build_snapshot(indices, watch, coins, {"value": 55, "label": "Neutral"}, news, calendar),
         "indices": indices, "macro": macro, "watchlist": watch, "crypto": coins,
         "crypto_global": {"total_market_cap": 2.3e12, "market_cap_change_24h": 0.8, "btc_dominance": 52.1},
         "fear_greed": {"value": 55, "label": "Neutral", "week_ago": 48},
@@ -423,6 +526,7 @@ def main():
     watch = fetch_group(WATCHLIST, errors, "Stocks")
     coins, glob, fng = fetch_crypto(errors)
     news = fetch_news(errors)
+    calendar = fetch_calendar(errors)
 
     stale = []
     # Keep the last good data for any section that came back empty.
@@ -440,9 +544,10 @@ def main():
     now = now_utc()
     data = {
         "generated_at": iso(now),
-        "next_update_at": iso(now + timedelta(hours=REFRESH_HOURS)),
-        "refresh_hours": REFRESH_HOURS,
-        "snapshot": build_snapshot(indices, watch, coins, fng, news),
+        "next_update_at": iso(now + timedelta(minutes=REFRESH_MINUTES)),
+        "refresh_minutes": REFRESH_MINUTES,
+        "snapshot": build_snapshot(indices, watch, coins, fng, news, calendar),
+        "calendar": calendar,
         "indices": indices,
         "macro": macro,
         "watchlist": watch,
@@ -455,8 +560,8 @@ def main():
     }
     write_data(data)
 
-    print("Updated %s | indices=%d macro=%d stocks=%d crypto=%d news=%d" % (
-        data["generated_at"], len(indices), len(macro), len(watch), len(coins), len(news)))
+    print("Updated %s | indices=%d macro=%d stocks=%d crypto=%d news=%d calendar=%d" % (
+        data["generated_at"], len(indices), len(macro), len(watch), len(coins), len(news), len(calendar)))
     for e in errors:
         print("  warning:", e)
     return 0

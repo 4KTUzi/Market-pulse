@@ -62,6 +62,15 @@ td.sp{width:110px;padding:6px 14px} td.sp svg{height:24px;margin:0}
 .tag{background:var(--chip);border-radius:6px;padding:1px 7px}
 .flag{color:var(--flag);font-weight:650}
 .empty{padding:18px;color:var(--mute)}
+tr.day td{background:var(--chip);font-size:12px;font-weight:650;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;text-align:left}
+tr.past td{opacity:.55}
+.badge{font-size:12px;font-weight:600;text-transform:none;letter-spacing:0;margin-left:8px;color:var(--mute)}
+.badge.on{color:var(--up)}
+td.ev,th.evh{white-space:normal;text-align:left;min-width:220px}
+.cc{color:var(--mute);font-size:12px;margin-right:6px}
+.imp{font-size:12px;font-weight:650;border-radius:6px;padding:1px 8px;background:var(--chip)}
+.imp.high{color:#fff;background:var(--down)}
+@media (prefers-color-scheme:dark){.imp.high{color:#0d1117}}
 footer{margin-top:30px;color:var(--mute);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
@@ -76,7 +85,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   <noscript><div class="banner">This page needs JavaScript to display the data.</div></noscript>
   <div id="app"></div>
   <footer>
-    This page is for information only and is not financial advice. Prices come from public data sources and may be delayed.
+    This page is for information only and is not financial advice. Crypto prices tick live from Binance's public feed while
+    the page is open; everything else refreshes about every 30 minutes and may be delayed.
     Headline tags and the “possible mover” flag come from simple keyword matching, not analysis or prediction, so they
     will miss things and sometimes flag the wrong ones. Always check the original source before acting on anything here.
   </footer>
@@ -86,6 +96,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 (function () {
   "use strict";
   var filter = "all";
+  var calFilter = "all";
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -139,7 +150,43 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     return new Date(iso).toLocaleString(undefined, {weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short"});
   }
 
-  var MACRO_UNIT = {"^TNX": ["", "%"], "CL=F": ["$", ""], "GC=F": ["$", ""]};
+  function dayKey(d) { return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+  function dayLabel(d) {
+    var now = new Date(), tom = new Date(now.getTime() + 864e5);
+    var base = d.toLocaleDateString(undefined, {weekday: "long", day: "numeric", month: "short"});
+    if (dayKey(d) === dayKey(now)) return "Today · " + base;
+    if (dayKey(d) === dayKey(tom)) return "Tomorrow · " + base;
+    return base;
+  }
+  function calendarHtml(d) {
+    var events = (d.calendar || []).filter(function (e) { return calFilter === "all" || e.impact === "High"; });
+    var h = "<h2>Economic calendar</h2>" +
+      '<div class="chips" role="group" aria-label="Filter calendar">' +
+      [["all", "High + medium impact"], ["high", "High impact only"]].map(function (f) {
+        return '<button class="chip" data-c="' + f[0] + '" aria-pressed="' + (calFilter === f[0]) + '">' + f[1] + "</button>";
+      }).join("") + "</div>";
+    var rows = "", lastDay = "", todayKey = dayKey(new Date()), nowMs = Date.now();
+    events.forEach(function (e) {
+      var t = new Date(e.time), k = dayKey(t);
+      if (t.getTime() < new Date(new Date().setHours(0, 0, 0, 0)).getTime()) return; // before today
+      if (k !== lastDay) {
+        if (lastDay === "" && k !== todayKey) rows += '<tr class="day"><td colspan="5">' + esc(dayLabel(new Date())) + '</td></tr><tr><td colspan="5" class="empty">No major events scheduled today.</td></tr>';
+        rows += '<tr class="day"><td colspan="5">' + esc(dayLabel(t)) + "</td></tr>";
+        lastDay = k;
+      }
+      var past = t.getTime() < nowMs;
+      rows += '<tr class="' + (past ? "past" : "") + '"><td>' + esc(t.toLocaleTimeString(undefined, {hour: "2-digit", minute: "2-digit"})) +
+        '</td><td class="ev"><span class="cc">' + esc(e.country) + "</span>" + esc(e.title) + "</td>" +
+        '<td><span class="imp ' + (e.impact === "High" ? "high" : "") + '">' + esc(e.impact === "Medium" ? "Medium" : e.impact) + "</span></td>" +
+        "<td>" + esc(e.forecast || "–") + "</td><td>" + esc(e.previous || "–") + "</td></tr>";
+    });
+    if (!rows) rows = '<tr><td colspan="5" class="empty">No events in the next 7 days match this filter.</td></tr>';
+    h += '<div class="tablewrap"><table><thead><tr><th>Time</th><th class="evh">Event</th><th>Impact</th><th>Forecast</th><th>Previous</th></tr></thead><tbody>' + rows + "</tbody></table></div>" +
+      '<div class="meta" style="margin-top:6px">Times are in your local time zone. Earlier events today are dimmed.</div>';
+    return h;
+  }
+
+  var MACRO_UNIT ={"^TNX": ["", "%"], "CL=F": ["$", ""], "GC=F": ["$", ""]};
 
   function statCard(q, unit) {
     unit = unit || ["", ""];
@@ -154,7 +201,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     if (d.errors && d.errors.length) notices.push("Some sources could not be reached on the last update (" + d.errors.length + "). Missing items are left out" +
       (d.stale_sections && d.stale_sections.length ? "; showing earlier data for: " + d.stale_sections.join(", ") : "") + ".");
     var next = d.next_update_at ? new Date(d.next_update_at) : null;
-    if (next && Date.now() > next.getTime() + 2 * 3600e3 && !d.demo)
+    if (next && Date.now() > next.getTime() + 90 * 60e3 && !d.demo)
       notices.push("This data is older than expected. The scheduled update may be delayed or paused.");
     document.getElementById("notices").innerHTML = notices.map(function (n) { return '<div class="banner">' + esc(n) + "</div>"; }).join("");
 
@@ -163,6 +210,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
     var h = "";
     if (d.snapshot) h += '<div class="snapshot">' + esc(d.snapshot) + "</div>";
+    h += calendarHtml(d);
 
     h += "<h2>US markets</h2><div class=\"grid\">" + (d.indices || []).map(function (q) { return statCard(q); }).join("") + "</div>";
     h += "<h2>Rates, dollar, commodities</h2><div class=\"grid\">" +
@@ -174,7 +222,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
           "</td><td>" + pctOnly(q.change_pct) + '</td><td class="sp">' + spark(q.spark) + "</td></tr>";
       }).join("") + "</tbody></table></div>";
 
-    h += "<h2>Crypto</h2><div class=\"two\">";
+    h += '<h2>Crypto<span class="badge" id="livebadge" aria-live="polite"></span></h2><div class="two">';
     var fg = d.fear_greed, g = d.crypto_global;
     h += '<div class="card">';
     if (fg) {
@@ -191,8 +239,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     h += "</div>";
     h += '<div class="tablewrap"><table><thead><tr><th>Coin</th><th>Price</th><th>24h</th><th>7d</th><th>Market cap</th><th>7 days</th></tr></thead><tbody>' +
       ((d.crypto || []).map(function (c) {
-        return "<tr><td>" + esc(c.name) + '<span class="sym">' + esc(c.symbol) + "</span></td><td>" + cryptoPrice(c.price) +
-          "</td><td>" + pctOnly(c.change_24h) + "</td><td>" + pctOnly(c.change_7d) + "</td><td>" + big(c.market_cap) +
+        return '<tr data-sym="' + esc(c.symbol) + '"><td>' + esc(c.name) + '<span class="sym">' + esc(c.symbol) + '</span></td><td class="lp">' + cryptoPrice(c.price) +
+          '</td><td class="c24">' + pctOnly(c.change_24h) + "</td><td>" + pctOnly(c.change_7d) + "</td><td>" + big(c.market_cap) +
           '</td><td class="sp">' + spark(c.spark) + "</td></tr>";
       }).join("") || '<tr><td colspan="6" class="empty">No crypto data available.</td></tr>') + "</tbody></table></div></div>";
 
@@ -204,8 +252,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
     document.getElementById("app").innerHTML = h;
     renderNews(d);
+    applyLive();
+    setBadge();
     Array.prototype.forEach.call(document.querySelectorAll(".chip"), function (b) {
-      b.addEventListener("click", function () { filter = b.getAttribute("data-f"); render(window.MARKET_DATA); });
+      b.addEventListener("click", function () {
+        if (b.hasAttribute("data-c")) calFilter = b.getAttribute("data-c");
+        else filter = b.getAttribute("data-f");
+        render(window.MARKET_DATA);
+      });
     });
   }
 
@@ -224,10 +278,77 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     }).join("") : '<li class="empty">No headlines match this filter right now.</li>';
   }
 
+  // ---- live crypto prices (Binance public WebSocket, no key needed) ----
+  var SYMS = {BTC: "btcusdt", ETH: "ethusdt", SOL: "solusdt", XRP: "xrpusdt", BNB: "bnbusdt", DOGE: "dogeusdt"};
+  var live = {}, ws = null, wsState = "off", wsRetry = 0, wsAlt = false, wsTimer = null;
+
+  function setBadge() {
+    var el = document.getElementById("livebadge");
+    if (!el) return;
+    el.textContent = wsState === "live" ? "● Live" :
+      wsState === "connecting" ? "connecting…" :
+      wsState === "failed" ? "live feed unavailable, showing last update" : "";
+    el.className = "badge" + (wsState === "live" ? " on" : "");
+  }
+  function applyLive() {
+    Object.keys(live).forEach(function (sym) {
+      var row = document.querySelector('tr[data-sym="' + sym + '"]');
+      if (!row) return;
+      row.querySelector(".lp").textContent = cryptoPrice(live[sym].price);
+      row.querySelector(".c24").innerHTML = pctOnly(live[sym].pct);
+    });
+  }
+  function dropSocket() {
+    if (ws) { ws.onopen = ws.onmessage = ws.onclose = ws.onerror = null; try { ws.close(); } catch (e) {} ws = null; }
+  }
+  function onWsFail() {
+    dropSocket();
+    if (document.hidden) { wsState = "off"; setBadge(); return; }
+    wsState = wsRetry >= 1 ? "failed" : "connecting";
+    setBadge();
+    wsRetry++;
+    wsAlt = !wsAlt; // alternate between port 9443 and 443 in case one is blocked
+    clearTimeout(wsTimer);
+    wsTimer = setTimeout(connectLive, Math.min(30000, 1000 * Math.pow(2, wsRetry)));
+  }
+  function connectLive() {
+    if (ws || document.hidden || !window.MARKET_DATA) return;
+    var rev = {}, streams = [];
+    (window.MARKET_DATA.crypto || []).forEach(function (c) {
+      if (SYMS[c.symbol]) { rev[SYMS[c.symbol].toUpperCase()] = c.symbol; streams.push(SYMS[c.symbol] + "@ticker"); }
+    });
+    if (!streams.length) return;
+    wsState = "connecting"; setBadge();
+    try {
+      ws = new WebSocket("wss://stream.binance.com:" + (wsAlt ? "443" : "9443") + "/stream?streams=" + streams.join("/"));
+    } catch (e) { onWsFail(); return; }
+    ws.onopen = function () { wsRetry = 0; };
+    ws.onmessage = function (ev) {
+      try {
+        var m = JSON.parse(ev.data), t = m.data || m, sym = t && rev[t.s];
+        if (!sym) return;
+        live[sym] = {price: parseFloat(t.c), pct: parseFloat(t.P)};
+        wsState = "live"; setBadge(); applyLive();
+      } catch (e) { /* ignore malformed message */ }
+    };
+    ws.onclose = onWsFail;
+    ws.onerror = onWsFail;
+  }
+  function startLive() {
+    var d = window.MARKET_DATA;
+    // Sample data stays sample: only go live in demo mode if the address ends with ?live
+    if (!d || (d.demo && location.search.indexOf("live") === -1)) return;
+    connectLive();
+  }
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) { clearTimeout(wsTimer); dropSocket(); wsState = "off"; setBadge(); }
+    else { wsRetry = 0; startLive(); }
+  });
+
   function load() {
     var s = document.createElement("script");
     s.src = "data.js?t=" + Date.now();
-    s.onload = function () { if (window.MARKET_DATA) render(window.MARKET_DATA); s.remove(); };
+    s.onload = function () { if (window.MARKET_DATA) { render(window.MARKET_DATA); startLive(); } s.remove(); };
     s.onerror = function () {
       s.remove();
       if (!window.MARKET_DATA) document.getElementById("meta").textContent =
@@ -236,7 +357,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
     document.head.appendChild(s);
   }
   load();
-  setInterval(load, 10 * 60 * 1000); // pick up new data if the page stays open
+  setInterval(load, 5 * 60 * 1000); // pick up new data if the page stays open
 })();
 </script>
 </body>
