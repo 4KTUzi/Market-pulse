@@ -73,10 +73,73 @@ def test_crypto():
     assert fng["value"] == 61 and fng["label"] == "Greed" and fng["week_ago"] == 50
 
 
+CAL = [
+    {"title": "CPI m/m", "country": "USD", "date": "2026-10-28T08:30:00-04:00", "impact": "High",
+     "forecast": "0.3%", "previous": "0.4%"},
+    {"title": "Minor survey", "country": "USD", "date": "2026-10-28T10:00:00-04:00", "impact": "Low",
+     "forecast": "", "previous": ""},
+    {"title": "Some AUD data", "country": "AUD", "date": "2026-10-28T01:00:00+11:00", "impact": "High",
+     "forecast": "", "previous": ""},
+    {"title": "ECB Press Conference", "country": "EUR", "date": "2026-10-29T08:45:00-04:00", "impact": "High",
+     "forecast": "", "previous": ""},
+]
+
+
+def test_calendar_parse_and_filter():
+    kept = [e for e in (fd.parse_calendar_item(r) for r in CAL) if e]
+    assert [e["title"] for e in kept] == ["CPI m/m", "ECB Press Conference"]   # low impact + AUD dropped
+    assert kept[0]["time"] == "2026-10-28T12:30:00Z" and kept[0]["forecast"] == "0.3%"
+    assert kept[1]["forecast"] is None
+
+
+def test_fomc_time_handles_daylight_saving():
+    ev = {e["time"][:10]: e["time"] for e in fd.fomc_events(None)}
+    assert ev["2026-10-28"] == "2026-10-28T18:00:00Z"   # 2pm EDT
+    assert ev["2026-12-09"] == "2026-12-09T19:00:00Z"   # 2pm EST
+
+
+def test_calendar_end_to_end():
+    from datetime import datetime, timedelta, timezone
+    soon = (datetime.now(timezone.utc) + timedelta(hours=5)).strftime("%Y-%m-%dT%H:%M:%S+00:00")
+    fd.get_json = lambda url: [{"title": "Retail Sales m/m", "country": "USD", "date": soon,
+                                "impact": "High", "forecast": "0.2%", "previous": "0.1%"}] if "this" in url else []
+    errors = []
+    cal = fd.fetch_calendar(errors)
+    assert not errors and any(e["title"] == "Retail Sales m/m" for e in cal)
+    fd.get_json = lambda url: (_ for _ in ()).throw(OSError("offline"))
+    errors = []
+    fd.fetch_calendar(errors)
+    assert errors and "Calendar feed unavailable" in errors[0]
+
+
+def test_calendar_next_week_missing_is_not_an_error():
+    from datetime import datetime, timedelta, timezone
+    import urllib.error
+    soon = (datetime.now(timezone.utc) + timedelta(hours=5)).strftime("%Y-%m-%dT%H:%M:%S+00:00")
+
+    def fake(url):
+        if "thisweek" in url:
+            return [{"title": "Retail Sales m/m", "country": "USD", "date": soon, "impact": "High",
+                     "forecast": "", "previous": ""}]
+        raise urllib.error.HTTPError(url, 404, "Not Found", None, None)
+    fd.get_json = fake
+    errors = []
+    cal = fd.fetch_calendar(errors)
+    assert errors == [] and any(e["title"] == "Retail Sales m/m" for e in cal)
+
+    # but if THIS week's feed fails, the viewer is told, and the HTTP code is included
+    def fake2(url):
+        raise urllib.error.HTTPError(url, 429, "Too Many Requests", None, None)
+    fd.get_json = fake2
+    errors = []
+    fd.fetch_calendar(errors)
+    assert len(errors) == 1 and "429" in errors[0]
+
+
 def test_demo_roundtrip():
     d = fd.demo_data()
     json.dumps(d)
-    assert d["demo"] and len(d["indices"]) == 5 and d["snapshot"]
+    assert d["demo"] and len(d["indices"]) == 5 and d["snapshot"] and len(d["calendar"]) == 8
 
 
 if __name__ == "__main__":

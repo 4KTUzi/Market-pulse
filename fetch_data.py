@@ -356,15 +356,20 @@ def fetch_calendar(errors):
     start = now - timedelta(hours=14)        # keep earlier events from "today" on screen
     end = now + timedelta(days=CALENDAR_DAYS_AHEAD)
     events = []
-    for url in CALENDAR_URLS:
+    for i, url in enumerate(CALENDAR_URLS):
         try:
             for raw in get_json(url):
                 ev = parse_calendar_item(raw)
                 if ev:
                     events.append(ev)
         except Exception as e:  # noqa: BLE001
-            errors.append("Calendar feed unavailable (%s)" % type(e).__name__)
-            break
+            why = "%s %s" % (type(e).__name__, getattr(e, "code", "")) if getattr(e, "code", None) else type(e).__name__
+            if i == 0:
+                # This week's feed is the essential one: tell the viewer.
+                errors.append("Calendar feed unavailable (%s)" % why)
+            else:
+                # Next week's file is often not published yet. Not worth a banner.
+                print("  note: %s not available (%s)" % (url.rsplit("/", 1)[-1], why))
     try:
         have_fomc_days = {e["time"][:10] for e in events if re.search(r"fomc|federal funds rate", e["title"], re.I)}
         for ev in fomc_events(now):
