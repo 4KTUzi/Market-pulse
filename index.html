@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Pulse</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#14171c; --mute:#5b6674; --line:#e3e7ed;
+  --up:#0a7d45; --down:#c4232d; --accent:#1d4ed8; --chip:#eef1f5;
+  --warn-bg:#fff4d6; --warn-ink:#6b4a00; --flag:#b45309;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0d1117; --card:#161b22; --ink:#e6edf3; --mute:#9aa7b5; --line:#2a313b;
+    --up:#3fb97a; --down:#ff7b7b; --accent:#8db4ff; --chip:#222a35;
+    --warn-bg:#3a2e0a; --warn-ink:#f2d58a; --flag:#f5b04c;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin-bottom:14px}
+h1{font-size:22px;margin:0;letter-spacing:-.01em}
+.meta{color:var(--mute);font-size:13px}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:28px 0 10px;font-weight:600}
+.banner{padding:10px 14px;border-radius:10px;background:var(--warn-bg);color:var(--warn-ink);margin:0 0 12px;font-size:14px}
+.snapshot{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.card .name{font-size:13px;color:var(--mute)}
+.card .price{font-size:22px;font-weight:650;margin:2px 0;font-variant-numeric:tabular-nums}
+.chg{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+.up{color:var(--up)} .down{color:var(--down)}
+svg.spark{display:block;width:100%;height:30px;margin-top:6px}
+.tablewrap{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:9px 14px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;color:var(--mute);font-weight:600}
+tr:last-child td{border-bottom:0}
+td.sp{width:110px;padding:6px 14px} td.sp svg{height:24px;margin:0}
+.sym{color:var(--mute);font-size:12px;margin-left:6px}
+.two{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:760px){.two{grid-template-columns:260px 1fr}}
+.gauge{height:10px;border-radius:6px;position:relative;margin:12px 0 6px;
+  background:linear-gradient(90deg,#c4232d,#e88a1a,#d9c53a,#6bbf59,#0a7d45)}
+.gauge i{position:absolute;top:-4px;width:4px;height:18px;border-radius:2px;background:var(--ink);transform:translateX(-2px)}
+.ends{display:flex;justify-content:space-between;font-size:11px;color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;
+  padding:5px 12px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){.chip[aria-pressed="true"]{color:#0d1117}}
+.news{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.news li{padding:12px 16px;border-bottom:1px solid var(--line)}
+.news li:last-child{border-bottom:0}
+.news a{color:var(--ink);text-decoration:none;font-weight:550}
+.news a:hover{text-decoration:underline}
+.sub{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:4px;font-size:12px;color:var(--mute);align-items:center}
+.tag{background:var(--chip);border-radius:6px;padding:1px 7px}
+.flag{color:var(--flag);font-weight:650}
+.empty{padding:18px;color:var(--mute)}
+footer{margin-top:30px;color:var(--mute);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Market Pulse</h1>
+    <div class="meta" id="meta" aria-live="polite">Loading…</div>
+  </header>
+  <div id="notices"></div>
+  <noscript><div class="banner">This page needs JavaScript to display the data.</div></noscript>
+  <div id="app"></div>
+  <footer>
+    This page is for information only and is not financial advice. Prices come from public data sources and may be delayed.
+    Headline tags and the “possible mover” flag come from simple keyword matching, not analysis or prediction, so they
+    will miss things and sometimes flag the wrong ones. Always check the original source before acting on anything here.
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var filter = "all";
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c];
+    });
+  }
+  function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
+  function num(v, d) {
+    if (v == null || isNaN(v)) return "–";
+    return Number(v).toLocaleString(undefined, {minimumFractionDigits: d, maximumFractionDigits: d});
+  }
+  function cryptoPrice(v) { return "$" + num(v, v >= 1 ? 2 : 4); }
+  function big(v) {
+    if (v == null) return "–";
+    var a = Math.abs(v);
+    if (a >= 1e12) return "$" + (v / 1e12).toFixed(2) + "T";
+    if (a >= 1e9) return "$" + (v / 1e9).toFixed(1) + "B";
+    if (a >= 1e6) return "$" + (v / 1e6).toFixed(1) + "M";
+    return "$" + num(v, 0);
+  }
+  function chg(pct, absVal) {
+    if (pct == null) return '<span class="chg">–</span>';
+    var cls = pct >= 0 ? "up" : "down", arrow = pct >= 0 ? "▲" : "▼";
+    var s = arrow + " " + (pct >= 0 ? "+" : "") + pct.toFixed(2) + "%";
+    if (absVal != null) s += " (" + (absVal >= 0 ? "+" : "") + num(absVal, 2) + ")";
+    return '<span class="chg ' + cls + '">' + s + "</span>";
+  }
+  function pctOnly(pct) {
+    if (pct == null) return "–";
+    return '<span class="' + (pct >= 0 ? "up" : "down") + '">' + (pct >= 0 ? "▲ +" : "▼ ") + pct.toFixed(2) + "%</span>";
+  }
+  function spark(arr) {
+    if (!arr || arr.length < 2) return "";
+    var min = Math.min.apply(null, arr), max = Math.max.apply(null, arr), r = (max - min) || 1;
+    var pts = arr.map(function (v, i) {
+      return (i / (arr.length - 1) * 100).toFixed(1) + "," + (28 - (v - min) / r * 26).toFixed(1);
+    }).join(" ");
+    var cls = arr[arr.length - 1] >= arr[0] ? "up" : "down";
+    return '<svg class="spark ' + cls + '" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">' +
+      '<polyline points="' + pts + '" fill="none" stroke="currentColor" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>';
+  }
+  function ago(iso) {
+    var m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+    if (m < 1) return "just now";
+    if (m < 60) return m + " min ago";
+    var h = Math.round(m / 60);
+    if (h < 48) return h + " h ago";
+    return Math.round(h / 24) + " d ago";
+  }
+  function localTime(iso) {
+    return new Date(iso).toLocaleString(undefined, {weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short"});
+  }
+
+  var MACRO_UNIT = {"^TNX": ["", "%"], "CL=F": ["$", ""], "GC=F": ["$", ""]};
+
+  function statCard(q, unit) {
+    unit = unit || ["", ""];
+    return '<div class="card"><div class="name">' + esc(q.name) + '</div>' +
+      '<div class="price">' + unit[0] + num(q.price, 2) + unit[1] + '</div>' +
+      chg(q.change_pct, q.change) + spark(q.spark) + '</div>';
+  }
+
+  function render(d) {
+    var notices = [];
+    if (d.demo) notices.push("Sample data: these numbers are synthetic placeholders so you can preview the layout. Run fetch_data.py to load real data.");
+    if (d.errors && d.errors.length) notices.push("Some sources could not be reached on the last update (" + d.errors.length + "). Missing items are left out" +
+      (d.stale_sections && d.stale_sections.length ? "; showing earlier data for: " + d.stale_sections.join(", ") : "") + ".");
+    var next = d.next_update_at ? new Date(d.next_update_at) : null;
+    if (next && Date.now() > next.getTime() + 2 * 3600e3 && !d.demo)
+      notices.push("This data is older than expected. The scheduled update may be delayed or paused.");
+    document.getElementById("notices").innerHTML = notices.map(function (n) { return '<div class="banner">' + esc(n) + "</div>"; }).join("");
+
+    document.getElementById("meta").textContent = "Updated " + localTime(d.generated_at) +
+      (next ? " · next about " + localTime(d.next_update_at) : "");
+
+    var h = "";
+    if (d.snapshot) h += '<div class="snapshot">' + esc(d.snapshot) + "</div>";
+
+    h += "<h2>US markets</h2><div class=\"grid\">" + (d.indices || []).map(function (q) { return statCard(q); }).join("") + "</div>";
+    h += "<h2>Rates, dollar, commodities</h2><div class=\"grid\">" +
+      (d.macro || []).map(function (q) { return statCard(q, MACRO_UNIT[q.symbol]); }).join("") + "</div>";
+
+    h += "<h2>Stock watchlist</h2><div class=\"tablewrap\"><table><thead><tr><th>Company</th><th>Price</th><th>Change</th><th>30 days</th></tr></thead><tbody>" +
+      (d.watchlist || []).map(function (q) {
+        return "<tr><td>" + esc(q.name) + '<span class="sym">' + esc(q.symbol) + "</span></td><td>$" + num(q.price, 2) +
+          "</td><td>" + pctOnly(q.change_pct) + '</td><td class="sp">' + spark(q.spark) + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
+
+    h += "<h2>Crypto</h2><div class=\"two\">";
+    var fg = d.fear_greed, g = d.crypto_global;
+    h += '<div class="card">';
+    if (fg) {
+      h += '<div class="name">Fear &amp; Greed index</div><div class="price">' + esc(fg.value) + " · " + esc(fg.label) + "</div>" +
+        '<div class="gauge"><i style="left:' + Math.max(0, Math.min(100, fg.value)) + '%"></i></div>' +
+        '<div class="ends"><span>Extreme fear</span><span>Extreme greed</span></div>' +
+        (fg.week_ago != null ? '<div class="meta" style="margin-top:8px">A week ago: ' + esc(fg.week_ago) + "</div>" : "");
+    }
+    if (g) {
+      h += '<div class="name" style="margin-top:14px">Total crypto market cap</div><div class="price">' + big(g.total_market_cap) + "</div>" +
+        chg(g.market_cap_change_24h) + '<div class="meta" style="margin-top:6px">Bitcoin share: ' + num(g.btc_dominance, 1) + "%</div>";
+    }
+    if (!fg && !g) h += '<div class="empty">No crypto overview available.</div>';
+    h += "</div>";
+    h += '<div class="tablewrap"><table><thead><tr><th>Coin</th><th>Price</th><th>24h</th><th>7d</th><th>Market cap</th><th>7 days</th></tr></thead><tbody>' +
+      ((d.crypto || []).map(function (c) {
+        return "<tr><td>" + esc(c.name) + '<span class="sym">' + esc(c.symbol) + "</span></td><td>" + cryptoPrice(c.price) +
+          "</td><td>" + pctOnly(c.change_24h) + "</td><td>" + pctOnly(c.change_7d) + "</td><td>" + big(c.market_cap) +
+          '</td><td class="sp">' + spark(c.spark) + "</td></tr>";
+      }).join("") || '<tr><td colspan="6" class="empty">No crypto data available.</td></tr>') + "</tbody></table></div></div>";
+
+    h += "<h2>News that may move markets</h2>" +
+      '<div class="chips" role="group" aria-label="Filter headlines">' +
+      [["all", "All"], ["watch", "Possible movers"], ["stocks", "Stocks & macro"], ["crypto", "Crypto"]].map(function (f) {
+        return '<button class="chip" data-f="' + f[0] + '" aria-pressed="' + (filter === f[0]) + '">' + f[1] + "</button>";
+      }).join("") + '</div><ul class="news" id="news"></ul>';
+
+    document.getElementById("app").innerHTML = h;
+    renderNews(d);
+    Array.prototype.forEach.call(document.querySelectorAll(".chip"), function (b) {
+      b.addEventListener("click", function () { filter = b.getAttribute("data-f"); render(window.MARKET_DATA); });
+    });
+  }
+
+  function renderNews(d) {
+    var items = (d.news || []).filter(function (n) {
+      if (filter === "watch") return n.watch;
+      if (filter === "stocks") return n.topic === "markets" || n.topic === "macro";
+      if (filter === "crypto") return n.topic === "crypto";
+      return true;
+    });
+    document.getElementById("news").innerHTML = items.length ? items.map(function (n) {
+      return "<li><a href=\"" + esc(safeUrl(n.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(n.title) + "</a>" +
+        '<div class="sub"><span>' + esc(n.source) + "</span><span>" + ago(n.published) + "</span>" +
+        (n.watch ? '<span class="flag">⚑ Possible mover</span>' : "") +
+        (n.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div></li>";
+    }).join("") : '<li class="empty">No headlines match this filter right now.</li>';
+  }
+
+  function load() {
+    var s = document.createElement("script");
+    s.src = "data.js?t=" + Date.now();
+    s.onload = function () { if (window.MARKET_DATA) render(window.MARKET_DATA); s.remove(); };
+    s.onerror = function () {
+      s.remove();
+      if (!window.MARKET_DATA) document.getElementById("meta").textContent =
+        "Could not load data.js. Run: python3 fetch_data.py";
+    };
+    document.head.appendChild(s);
+  }
+  load();
+  setInterval(load, 10 * 60 * 1000); // pick up new data if the page stays open
+})();
+</script>
+</body>
+</html>
