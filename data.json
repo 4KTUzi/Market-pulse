@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-28T10:26:30Z",
-  "next_update_at": "2026-10-28T10:56:30Z",
+  "generated_at": "2026-10-28T10:27:55Z",
+  "next_update_at": "2026-10-28T10:57:55Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 +0.60%, Nasdaq +1.18%, Dow Jones +0.03% at the last close or live price. VIX is 17.6 (calm). Biggest watchlist move: Tesla +4.04%. Bitcoin +2.5% over 24h, Ethereum +3.0%. Crypto Fear & Greed: 51 (Neutral). 5 of 40 recent headlines are flagged as possible market movers. High-impact events today (UTC): Annual Budget Release; FOMC Statement; Federal Funds Rate.",
+  "snapshot": "US stocks: S&P 500 +0.60%, Nasdaq +1.18%, Dow Jones +0.03% at the last close or live price. VIX is 17.6 (calm). Biggest watchlist move: Tesla +4.04%. Bitcoin +2.4% over 24h, Ethereum +2.9%. Crypto Fear & Greed: 51 (Neutral). 5 of 40 recent headlines are flagged as possible market movers. High-impact events today (UTC): Annual Budget Release; FOMC Statement; Federal Funds Rate.",
   "calendar": [
     {
       "title": "Annual Budget Release",
@@ -305,7 +305,7 @@
       "change": 0.06,
       "change_pct": 0.34,
       "currency": "USD",
-      "as_of": "2026-10-28T10:11:16Z",
+      "as_of": "2026-10-28T10:12:46Z",
       "spark": [
         16.07,
         16.04,
@@ -370,11 +370,11 @@
     {
       "symbol": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 102.41,
-      "change": 0.09,
-      "change_pct": 0.09,
+      "price": 102.4,
+      "change": 0.08,
+      "change_pct": 0.08,
       "currency": "USD",
-      "as_of": "2026-10-28T10:16:27Z",
+      "as_of": "2026-10-28T10:17:51Z",
       "spark": [
         101.2,
         101.37,
@@ -398,17 +398,17 @@
         101.81,
         101.96,
         102.32,
-        102.41
+        102.4
       ]
     },
     {
       "symbol": "CL=F",
       "name": "Crude oil",
-      "price": 101.7,
-      "change": 1.8,
-      "change_pct": 1.8,
+      "price": 101.63,
+      "change": 1.73,
+      "change_pct": 1.73,
       "currency": "USD",
-      "as_of": "2026-10-28T10:16:27Z",
+      "as_of": "2026-10-28T10:17:50Z",
       "spark": [
         92.6,
         89.38,
@@ -432,17 +432,17 @@
         103.27,
         101.76,
         99.9,
-        101.7
+        101.63
       ]
     },
     {
       "symbol": "GC=F",
       "name": "Gold",
-      "price": 4062.6,
-      "change": -12.0,
-      "change_pct": -0.29,
+      "price": 4063.2,
+      "change": -11.4,
+      "change_pct": -0.28,
       "currency": "USD",
-      "as_of": "2026-10-28T10:16:23Z",
+      "as_of": "2026-10-28T10:17:50Z",
       "spark": [
         4168.4,
         4179.7,
@@ -466,7 +466,7 @@
         4007.9,
         4038.4,
         4074.6,
-        4062.6
+        4063.2
       ]
     }
   ],
@@ -708,11 +708,11 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 81443,
-      "change_24h": 2.45,
+      "price": 81425,
+      "change_24h": 2.39,
       "change_7d": -2.08,
-      "market_cap": 1637407804366,
-      "volume_24h": 24012256162,
+      "market_cap": 1637441429194,
+      "volume_24h": 24015460470,
       "spark": [
         83355.5787,
         83768.3833,
@@ -762,11 +762,11 @@
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2367.95,
-      "change_24h": 2.96,
+      "price": 2367.06,
+      "change_24h": 2.9,
       "change_7d": -3.34,
-      "market_cap": 289298954411,
-      "volume_24h": 9783261535,
+      "market_cap": 289294143168,
+      "volume_24h": 9782701123,
       "spark": [
         2453.7815,
         2471.8174,
@@ -816,11 +816,11 @@
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 103.01,
-      "change_24h": 3.74,
+      "price": 103.0,
+      "change_24h": 3.71,
       "change_7d": -3.49,
-      "market_cap": 60767196089,
-      "volume_24h": 2119873243,
+      "market_cap": 60765797090,
+      "volume_24h": 2121041188,
       "spark": [
         106.541,
         106.6895,
@@ -871,10 +871,10 @@
       "symbol": "XRP",
       "name": "XRP",
       "price": 1.33,
-      "change_24h": 2.88,
+      "change_24h": 2.83,
       "change_7d": -1.31,
-      "market_cap": 84183438365,
-      "volume_24h": 1588365365,
+      "market_cap": 84184403423,
+      "volume_24h": 1589294866,
       "spark": [
         1.3554,
         1.3574,
@@ -924,11 +924,11 @@
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 755.8,
-      "change_24h": 2.94,
+      "price": 755.77,
+      "change_24h": 2.92,
       "change_7d": 0.93,
-      "market_cap": 99388963789,
-      "volume_24h": 921385017,
+      "market_cap": 99387440953,
+      "volume_24h": 923072359,
       "spark": [
         747.2841,
         744.9805,
@@ -978,11 +978,11 @@
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.080332,
-      "change_24h": 4.7,
+      "price": 0.080319,
+      "change_24h": 4.65,
       "change_7d": -1.72,
-      "market_cap": 12574090655,
-      "volume_24h": 521432033,
+      "market_cap": 12573550709,
+      "volume_24h": 524334374,
       "spark": [
         0.0819,
         0.0821,
