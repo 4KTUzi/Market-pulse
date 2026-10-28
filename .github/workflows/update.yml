@@ -4,7 +4,7 @@ on:
   schedule:
     # 02:07, 08:07, 14:07, 20:07 UTC = 06:07, 12:07, 18:07, 00:07 in Dubai (UTC+4).
     # Off the hour on purpose: GitHub delays jobs scheduled exactly on the hour.
-    - cron: "7 2,8,14,20 * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch:        # lets you press "Run workflow" manually
   push:
     branches: [main]
