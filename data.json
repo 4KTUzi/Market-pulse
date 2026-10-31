@@ -1,17 +1,9 @@
 {
-  "generated_at": "2026-10-30T22:56:22Z",
-  "next_update_at": "2026-10-30T23:26:22Z",
+  "generated_at": "2026-10-31T02:16:42Z",
+  "next_update_at": "2026-10-31T02:46:42Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -1.82%, Nasdaq -2.86%, Dow Jones -1.09% at the last close or live price. VIX is 19.4 (moderate). Biggest watchlist move: Nvidia -4.22%. Bitcoin -2.5% over 24h, Ethereum -1.6%. Crypto Fear & Greed: 30 (Fear). 9 of 42 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -1.82%, Nasdaq -2.86%, Dow Jones -1.09% at the last close or live price. VIX is 19.4 (moderate). Biggest watchlist move: Nvidia -4.22%. Bitcoin +0.5% over 24h, Ethereum +1.9%. Crypto Fear & Greed: 30 (Fear). 8 of 42 recent headlines are flagged as possible market movers.",
   "calendar": [
-    {
-      "title": "German Prelim GDP q/q",
-      "country": "EUR",
-      "time": "2026-10-30T09:00:00Z",
-      "impact": "Medium",
-      "forecast": "0.1%",
-      "previous": "0.2%"
-    },
     {
       "title": "Employment Cost Index q/q",
       "country": "USD",
@@ -576,13 +568,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 76881,
-      "change_24h": -2.54,
-      "change_7d": -5.74,
-      "market_cap": 1545716146660,
-      "volume_24h": 202400923554,
+      "price": 77311,
+      "change_24h": 0.47,
+      "change_7d": -4.04,
+      "market_cap": 1554357860085,
+      "volume_24h": 201349000104,
       "spark": [
-        81304.8858,
         80857.851,
         80690.4087,
         80547.4596,
@@ -623,20 +614,20 @@
         78443.9323,
         77603.6617,
         76863.4316,
-        77058.5782
+        77058.5782,
+        76640.9684
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2234.88,
-      "change_24h": -1.62,
-      "change_7d": -6.79,
-      "market_cap": 273086434140,
-      "volume_24h": 21041207346,
+      "price": 2243.99,
+      "change_24h": 1.87,
+      "change_7d": -5.49,
+      "market_cap": 274151113936,
+      "volume_24h": 15185719053,
       "spark": [
-        2397.218,
         2379.8773,
         2375.5888,
         2364.9118,
@@ -677,20 +668,20 @@
         2236.8943,
         2227.023,
         2221.5848,
-        2240.8021
+        2240.8021,
+        2237.2475
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 95.74,
-      "change_24h": -1.14,
-      "change_7d": -8.19,
-      "market_cap": 56505786285,
-      "volume_24h": 4572160715,
+      "price": 96.6,
+      "change_24h": 2.31,
+      "change_7d": -5.44,
+      "market_cap": 56981518699,
+      "volume_24h": 3319593210,
       "spark": [
-        103.5657,
         102.5085,
         102.2425,
         101.3223,
@@ -731,7 +722,8 @@
         97.895,
         96.7374,
         95.0087,
-        94.3092
+        94.3092,
+        95.3624
       ]
     },
     {
@@ -739,12 +731,11 @@
       "symbol": "XRP",
       "name": "XRP",
       "price": 1.25,
-      "change_24h": 0.6,
-      "change_7d": -4.42,
-      "market_cap": 79307451332,
-      "volume_24h": 3335800872,
+      "change_24h": 3.32,
+      "change_7d": -2.5,
+      "market_cap": 79474000535,
+      "volume_24h": 2587427159,
       "spark": [
-        1.3048,
         1.2905,
         1.2876,
         1.276,
@@ -785,20 +776,20 @@
         1.2556,
         1.2526,
         1.24,
-        1.244
+        1.244,
+        1.2502
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 699.19,
-      "change_24h": -0.55,
-      "change_7d": -6.06,
-      "market_cap": 91963855594,
-      "volume_24h": 2084796735,
+      "price": 704.38,
+      "change_24h": -0.53,
+      "change_7d": -3.91,
+      "market_cap": 92626730234,
+      "volume_24h": 1508182543,
       "spark": [
-        740.5152,
         738.9641,
         737.8866,
         732.0196,
@@ -839,20 +830,20 @@
         715.2922,
         702.1025,
         697.338,
-        698.853
+        698.853,
+        696.1666
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.0756,
-      "change_24h": -0.51,
-      "change_7d": -5.02,
-      "market_cap": 11836082737,
-      "volume_24h": 854260296,
+      "price": 0.075945,
+      "change_24h": 2.18,
+      "change_7d": -3.03,
+      "market_cap": 11887550006,
+      "volume_24h": 614067930,
       "spark": [
-        0.0792,
         0.0788,
         0.0783,
         0.0772,
@@ -893,21 +884,51 @@
         0.0761,
         0.0754,
         0.0754,
+        0.0753,
         0.0753
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2612750243055.167,
-    "market_cap_change_24h": -4.5,
-    "btc_dominance": 59.1
+    "total_market_cap": 2623762008267.6045,
+    "market_cap_change_24h": -1.58,
+    "btc_dominance": 59.2
   },
   "fear_greed": {
     "value": 30,
     "label": "Fear",
-    "week_ago": 50
+    "week_ago": 51
   },
   "news": [
+    {
+      "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
+      "url": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
+      "source": "CoinDesk",
+      "published": "2026-10-31T00:48:56Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Has the tech bubble burst? Why the Nasdaq\u2019s rough ride looks eerily like 2000.",
+      "url": "https://www.marketwatch.com/story/has-the-tech-bubble-burst-why-the-nasdaqs-rough-ride-looks-eerily-like-2000-5bcefcb2?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-10-30T23:14:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Alaska Senate election: DOJ wants to 'segregate' all ballots for 2nd Sullivan candidate",
+      "url": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
+      "source": "CNBC",
+      "published": "2026-10-30T22:57:55Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
     {
       "title": "Jim Cramer says it's time to look beyond tech. Here are 4 consumer stocks he likes",
       "url": "https://www.cnbc.com/2026/10/30/jim-cramer-consumer-staples-stocks.html",
@@ -1040,17 +1061,6 @@
       "watch": false
     },
     {
-      "title": "Criminal investigation of Alaska Senate race is 'ongoing,' U.S. Attorney says",
-      "url": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
-      "source": "CNBC",
-      "published": "2026-10-30T20:46:04Z",
-      "topic": "markets",
-      "tags": [
-        "Regulation & legal"
-      ],
-      "watch": false
-    },
-    {
       "title": "Reddit\u2019s stock logs its biggest one-day drop ever. It\u2019s not the last of the bad news, analysts say.",
       "url": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1093,15 +1103,6 @@
       "url": "https://www.marketwatch.com/story/the-selloff-in-tech-stocks-is-shifting-into-overdrive-afb50975?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-10-30T20:26:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "After Intel\u2019s historic stock drop, analysts say there\u2019s no reason to buy the dip",
-      "url": "https://www.marketwatch.com/story/after-intels-historic-stock-drop-analysts-say-theres-no-reason-to-buy-the-dip-068446af?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-10-30T20:23:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -1316,17 +1317,6 @@
         "Crypto"
       ],
       "watch": false
-    },
-    {
-      "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
-      "url": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
-      "source": "CoinDesk",
-      "published": "2026-10-30T07:54:07Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": true
     },
     {
       "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
