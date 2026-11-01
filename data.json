@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-31T22:47:58Z",
-  "next_update_at": "2026-10-31T23:17:58Z",
+  "generated_at": "2026-11-01T02:08:26Z",
+  "next_update_at": "2026-11-01T02:38:26Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -1.82%, Nasdaq -2.86%, Dow Jones -1.09% at the last close or live price. VIX is 19.4 (moderate). Biggest watchlist move: Nvidia -4.22%. Bitcoin +0.9% over 24h, Ethereum +1.0%. Crypto Fear & Greed: 30 (Fear). 2 of 41 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -1.82%, Nasdaq -2.86%, Dow Jones -1.09% at the last close or live price. VIX is 19.4 (moderate). Biggest watchlist move: Nvidia -4.22%. Bitcoin +0.5% over 24h, Ethereum +1.2%. Crypto Fear & Greed: 34 (Fear). 2 of 41 recent headlines are flagged as possible market movers.",
   "calendar": [],
   "indices": [
     {
@@ -559,13 +559,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 77559,
-      "change_24h": 0.87,
-      "change_7d": -3.65,
-      "market_cap": 1559357429626,
-      "volume_24h": 47590685012,
+      "price": 77704,
+      "change_24h": 0.52,
+      "change_7d": -3.96,
+      "market_cap": 1562302157878,
+      "volume_24h": 38918913953,
       "spark": [
-        80348.4838,
         80809.3946,
         80535.2682,
         80253.703,
@@ -606,20 +605,20 @@
         77184.6743,
         77362.4465,
         77426.8458,
-        77645.9199
+        77645.9199,
+        77559.5086
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2256.6,
-      "change_24h": 0.98,
-      "change_7d": -3.91,
-      "market_cap": 275705154203,
-      "volume_24h": 4502338034,
+      "price": 2269.34,
+      "change_24h": 1.16,
+      "change_7d": -3.86,
+      "market_cap": 277343672097,
+      "volume_24h": 4360052977,
       "spark": [
-        2338.3858,
         2361.664,
         2351.0675,
         2325.9973,
@@ -660,20 +659,20 @@
         2240.4433,
         2243.2193,
         2249.5442,
-        2253.7537
+        2253.7537,
+        2254.4624
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 95.62,
-      "change_24h": -0.12,
-      "change_7d": -5.59,
-      "market_cap": 56422061542,
-      "volume_24h": 1793344750,
+      "price": 95.7,
+      "change_24h": -0.82,
+      "change_7d": -6.62,
+      "market_cap": 56486894827,
+      "volume_24h": 1580207454,
       "spark": [
-        101.3026,
         102.3549,
         101.8777,
         100.8226,
@@ -714,7 +713,8 @@
         95.8833,
         95.4224,
         95.6974,
-        95.9978
+        95.9978,
+        95.8725
       ]
     },
     {
@@ -722,12 +722,11 @@
       "symbol": "XRP",
       "name": "XRP",
       "price": 1.25,
-      "change_24h": -0.04,
-      "change_7d": -3.0,
-      "market_cap": 79294480354,
-      "volume_24h": 770950577,
+      "change_24h": -0.11,
+      "change_7d": -4.04,
+      "market_cap": 79323341944,
+      "volume_24h": 735545610,
       "spark": [
-        1.2916,
         1.3057,
         1.2994,
         1.2934,
@@ -768,20 +767,20 @@
         1.246,
         1.2468,
         1.2471,
-        1.2533
+        1.2533,
+        1.252
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 702.76,
-      "change_24h": 0.52,
-      "change_7d": -4.07,
-      "market_cap": 92421102603,
-      "volume_24h": 722409372,
+      "price": 703.27,
+      "change_24h": -0.14,
+      "change_7d": -5.21,
+      "market_cap": 92490506198,
+      "volume_24h": 681513273,
       "spark": [
-        732.4533,
         742.7083,
         743.1629,
         736.8169,
@@ -822,20 +821,20 @@
         703.0118,
         701.8325,
         703.6297,
-        706.5708
+        706.5708,
+        702.495
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.075775,
-      "change_24h": 0.26,
-      "change_7d": -1.81,
-      "market_cap": 11861899887,
-      "volume_24h": 301456025,
+      "price": 0.075677,
+      "change_24h": -0.28,
+      "change_7d": -2.9,
+      "market_cap": 11849144665,
+      "volume_24h": 278668577,
       "spark": [
-        0.0771,
         0.0778,
         0.077,
         0.0765,
@@ -876,27 +875,28 @@
         0.0753,
         0.075,
         0.0753,
-        0.0758
+        0.0758,
+        0.0759
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2627883326355.404,
-    "market_cap_change_24h": -1.82,
-    "btc_dominance": 59.3
+    "total_market_cap": 2632906890843.065,
+    "market_cap_change_24h": -2.26,
+    "btc_dominance": 59.2
   },
   "fear_greed": {
-    "value": 30,
+    "value": 34,
     "label": "Fear",
-    "week_ago": 51
+    "week_ago": 54
   },
   "news": [
     {
-      "title": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
-      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-      "source": "CNBC",
-      "published": "2026-10-31T22:27:56Z",
-      "topic": "markets",
+      "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
+      "url": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+      "source": "CoinDesk",
+      "published": "2026-11-01T01:10:05Z",
+      "topic": "crypto",
       "tags": [
         "Crypto"
       ],
@@ -906,9 +906,20 @@
       "title": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice",
       "url": "https://www.cnbc.com/2026/10/31/trump-murdoch-wsj-epstein-defamation-lawsuit-dismissed.html",
       "source": "CNBC",
-      "published": "2026-10-31T21:05:53Z",
+      "published": "2026-10-31T23:56:40Z",
       "topic": "markets",
       "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+      "source": "CNBC",
+      "published": "2026-10-31T22:27:56Z",
+      "topic": "markets",
+      "tags": [
+        "Crypto"
+      ],
       "watch": false
     },
     {
@@ -1230,17 +1241,6 @@
       "url": "https://www.coindesk.com/markets/2026/10/31/a-nasdaq-listed-company-may-sell-usd450-million-bitcoin-citing-binance-hack-and-quantum-fears",
       "source": "CoinDesk",
       "published": "2026-10-31T12:49:47Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "The $6.3 billion Binance hack paradox: Centralization made the hack possible, but also saved $3 billion",
-      "url": "https://www.coindesk.com/business/2026/10/31/the-usd6-3-billion-binance-hack-paradox-centralization-made-the-hack-possible-but-also-saved-usd3-billion",
-      "source": "CoinDesk",
-      "published": "2026-10-31T12:00:00Z",
       "topic": "crypto",
       "tags": [
         "Crypto"
