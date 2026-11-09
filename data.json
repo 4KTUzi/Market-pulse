@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-08T20:44:36Z",
-  "next_update_at": "2026-11-08T21:14:36Z",
+  "generated_at": "2026-11-09T00:48:04Z",
+  "next_update_at": "2026-11-09T01:18:04Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 +0.31%, Nasdaq +1.09%, Dow Jones -0.46% at the last close or live price. VIX is 25.6 (elevated). Biggest watchlist move: Tesla +4.23%. Bitcoin +0.1% over 24h, Ethereum -0.2%. Crypto Fear & Greed: 28 (Fear). 1 of 45 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 +0.31%, Nasdaq +1.09%, Dow Jones -0.46% at the last close or live price. VIX is 25.6 (elevated). Biggest watchlist move: Tesla +4.23%. Bitcoin -0.9% over 24h, Ethereum -4.3%. Crypto Fear & Greed: 29 (Fear). 1 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [
     {
       "title": "BOE Gov Bailey Speaks",
@@ -297,11 +297,11 @@
     {
       "symbol": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 102.28,
-      "change": 0.73,
-      "change_pct": 0.72,
+      "price": 102.2,
+      "change": -0.1,
+      "change_pct": -0.1,
       "currency": "USD",
-      "as_of": "2026-11-06T21:59:59Z",
+      "as_of": "2026-11-09T00:38:01Z",
       "spark": [
         102.14,
         102.21,
@@ -324,17 +324,18 @@
         101.87,
         101.51,
         101.55,
-        102.3
+        102.3,
+        102.2
       ]
     },
     {
       "symbol": "CL=F",
       "name": "Crude oil",
-      "price": 90.83,
-      "change": 0.31,
-      "change_pct": 0.34,
+      "price": 90.55,
+      "change": -0.28,
+      "change_pct": -0.31,
       "currency": "USD",
-      "as_of": "2026-11-06T21:59:58Z",
+      "as_of": "2026-11-09T00:37:57Z",
       "spark": [
         91.49,
         91.85,
@@ -357,17 +358,18 @@
         96.09,
         88.12,
         90.52,
-        90.83
+        90.83,
+        90.55
       ]
     },
     {
       "symbol": "GC=F",
       "name": "Gold",
-      "price": 4074.9,
-      "change": -38.6,
-      "change_pct": -0.94,
+      "price": 4100.4,
+      "change": 25.5,
+      "change_pct": 0.63,
       "currency": "USD",
-      "as_of": "2026-11-06T21:59:59Z",
+      "as_of": "2026-11-09T00:38:02Z",
       "spark": [
         4157.0,
         4216.3,
@@ -390,7 +392,8 @@
         3940.4,
         4073.0,
         4113.5,
-        4074.9
+        4074.9,
+        4100.4
       ]
     }
   ],
@@ -639,13 +642,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 75762,
-      "change_24h": 0.13,
-      "change_7d": -2.52,
-      "market_cap": 1523552144776,
-      "volume_24h": 10623252553,
+      "price": 74941,
+      "change_24h": -0.94,
+      "change_7d": -4.07,
+      "market_cap": 1506862188117,
+      "volume_24h": 17752303636,
       "spark": [
-        77731.6645,
         78293.8391,
         78556.5456,
         78032.0773,
@@ -686,20 +688,20 @@
         75825.4161,
         75884.882,
         75895.9852,
-        75986.1759
+        75986.1759,
+        75849.1797
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2225.99,
-      "change_24h": -0.18,
-      "change_7d": -1.36,
-      "market_cap": 272026932689,
-      "volume_24h": 3742922502,
+      "price": 2135.22,
+      "change_24h": -4.35,
+      "change_7d": -6.06,
+      "market_cap": 260941099162,
+      "volume_24h": 8634203640,
       "spark": [
-        2257.0119,
         2273.9241,
         2306.9406,
         2282.6438,
@@ -740,20 +742,20 @@
         2235.5121,
         2238.5938,
         2238.069,
-        2239.0662
+        2239.0662,
+        2230.2343
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 89.26,
-      "change_24h": -0.07,
-      "change_7d": -5.02,
-      "market_cap": 52768420836,
-      "volume_24h": 978086669,
+      "price": 86.95,
+      "change_24h": -2.62,
+      "change_7d": -7.96,
+      "market_cap": 51396696306,
+      "volume_24h": 1886029803,
       "spark": [
-        93.8784,
         94.4785,
         95.4959,
         94.1938,
@@ -794,20 +796,20 @@
         89.2111,
         89.2469,
         89.5924,
-        89.6071
+        89.6071,
+        89.502
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 1.15,
-      "change_24h": -0.7,
-      "change_7d": -7.71,
-      "market_cap": 73023031265,
-      "volume_24h": 842566263,
+      "price": 1.12,
+      "change_24h": -3.52,
+      "change_7d": -10.78,
+      "market_cap": 71162272969,
+      "volume_24h": 1538940781,
       "spark": [
-        1.2455,
         1.2496,
         1.2606,
         1.2496,
@@ -848,20 +850,20 @@
         1.1608,
         1.1639,
         1.1651,
-        1.1552
+        1.1552,
+        1.1514
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 696.61,
-      "change_24h": 0.15,
-      "change_7d": -1.7,
-      "market_cap": 91612909525,
-      "volume_24h": 576283074,
+      "price": 686.16,
+      "change_24h": -1.28,
+      "change_7d": -3.22,
+      "market_cap": 90234556661,
+      "volume_24h": 699282413,
       "spark": [
-        707.951,
         711.9011,
         713.5923,
         706.954,
@@ -902,20 +904,20 @@
         695.3665,
         699.4025,
         697.8311,
-        697.3266
+        697.3266,
+        696.828
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.071094,
-      "change_24h": -0.6,
-      "change_7d": -5.42,
-      "market_cap": 11137912360,
-      "volume_24h": 267204456,
+      "price": 0.069242,
+      "change_24h": -2.88,
+      "change_7d": -8.2,
+      "market_cap": 10847040342,
+      "volume_24h": 474467356,
       "spark": [
-        0.075,
         0.0755,
         0.0761,
         0.0751,
@@ -956,21 +958,134 @@
         0.0712,
         0.0712,
         0.0712,
-        0.0713
+        0.0713,
+        0.0712
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2520277508231.665,
-    "market_cap_change_24h": -3.74,
-    "btc_dominance": 60.0
+    "total_market_cap": 2488482671279.881,
+    "market_cap_change_24h": -5.23,
+    "btc_dominance": 60.2
   },
   "fear_greed": {
-    "value": 28,
+    "value": 29,
     "label": "Fear",
-    "week_ago": 34
+    "week_ago": 37
   },
   "news": [
+    {
+      "title": "The S&P 500 could be dangerously exposed to AI. Here are some simple alternatives.",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-has-become-a-big-ai-bet-here-are-some-simple-alternatives-3c7574a4?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T00:40:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "I\u2019m second-guessing my adviser: Is an annuity the right move in this market?",
+      "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T00:30:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "\u2018It feels like he\u2019s quietly building a separate life\u2019: My husband inherited $500,000, but he refuses to spend it on our home",
+      "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T00:02:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
+      "url": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T00:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "How much in Roth conversions can you do in 2027 with the new tax brackets?",
+      "url": "https://www.marketwatch.com/story/how-much-roth-conversion-can-you-do-in-2027-with-the-new-tax-brackets-a2f940c8?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-08T23:50:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "I\u2019m 65 and worth more than $5.6 million. Can I afford a $200,000 camper?",
+      "url": "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-08T23:49:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "This retired professor has reinvented himself \u2014 as a Taylor Swift scholar",
+      "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-08T23:35:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "You follow the rules for smart stock trading. But are they the right rules?",
+      "url": "https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-08T23:15:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "A new setback for the AI trade: Nvidia\u2019s board is probing CEO Huang\u2019s relationship with alleged spy",
+      "url": "https://www.marketwatch.com/story/nvidias-board-will-probe-ceo-jensen-huangs-relationship-with-an-alleged-spy-heres-what-to-know-86656cd9?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-08T23:05:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Vitalik \u2018pivots\u2019 ETH to store of value, crypto suffers after US midterms: Hodler\u2019s Digest",
+      "url": "https://cointelegraph.com/magazine/vitaliks-pivots-to-eth-as-a-store-of-value-us-election-weighs-on-crypto-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-08T22:59:06Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+      "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+      "source": "CNBC",
+      "published": "2026-11-08T22:53:57Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Trump says renewed Iran strikes \u2018highly unlikely\u2019 if talks progress but warns he could still strike",
+      "url": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+      "source": "CNBC",
+      "published": "2026-11-08T21:53:02Z",
+      "topic": "markets",
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": false
+    },
     {
       "title": "What the election results mean for crypto: State of Crypto",
       "url": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
@@ -1005,17 +1120,6 @@
       "watch": false
     },
     {
-      "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
-      "url": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
-      "source": "CNBC",
-      "published": "2026-11-08T18:18:30Z",
-      "topic": "markets",
-      "tags": [
-        "Geopolitics & trade"
-      ],
-      "watch": false
-    },
-    {
       "title": "\u2018It seems bizarre\u2019: We\u2019re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
       "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1034,33 +1138,6 @@
       "watch": false
     },
     {
-      "title": "Two months after my father\u2019s funeral, my stepmother asked me to repay his $40,000 wedding gift. Should I do what she says?",
-      "url": "https://www.marketwatch.com/story/shes-a-type-a-personality-my-stepmother-wants-me-to-repay-my-late-fathers-40-000-wedding-gift-should-i-oblige-51fc64f7?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T17:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
-      "url": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T17:23:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018It feels like he\u2019s quietly building a separate life\u2019: My husband inherited $500,000, but he refuses to spend it on our home",
-      "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T16:00:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "How Democrats will try to end Trump's tariffs",
       "url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
       "source": "CNBC",
@@ -1068,35 +1145,6 @@
       "topic": "markets",
       "tags": [
         "Geopolitics & trade"
-      ],
-      "watch": false
-    },
-    {
-      "title": "\u2018I have no financial safety net\u2019: I\u2019m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
-      "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T15:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
-      "url": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T15:16:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Corporate America\u2019s profit numbers are just barely beating Wall Street\u2019s expectations",
-      "url": "https://www.marketwatch.com/story/corporate-americas-profit-numbers-are-just-barely-beating-wall-streets-expectations-eaa67fe2?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T15:00:00Z",
-      "topic": "markets",
-      "tags": [
-        "Earnings"
       ],
       "watch": false
     },
@@ -1121,28 +1169,10 @@
       "watch": false
     },
     {
-      "title": "\u2018We\u2019re losing to cottage cheese\u2019: The protein-maxxing craze is hurting cream-cheese sales",
-      "url": "https://www.marketwatch.com/story/were-losing-to-cottage-cheese-the-protein-maxxing-craze-is-hurting-cream-cheese-sales-40ae94f3?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T14:13:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
       "url": "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
       "source": "CNBC",
       "published": "2026-11-08T14:00:01Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Stocks are moving in sync again for the first time in a while. There\u2019s just one problem.",
-      "url": "https://www.marketwatch.com/story/stocks-are-moving-in-sync-again-for-the-first-time-in-a-while-theres-just-one-problem-c953bf72?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T14:00:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -1177,15 +1207,6 @@
       "watch": false
     },
     {
-      "title": "Brands are sponsoring IRL communities. Some experts say that could spell their end",
-      "url": "https://www.cnbc.com/make-it/2026/11/08/brand-sponsorship-local-communities.html",
-      "source": "CNBC",
-      "published": "2026-11-08T13:00:01Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "Binance France emails announce closure of its users\u2019 accounts on Dec. 31",
       "url": "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "source": "Cointelegraph",
@@ -1205,15 +1226,6 @@
       "tags": [
         "Crypto"
       ],
-      "watch": false
-    },
-    {
-      "title": "This market signal called the tech selloff. Now it\u2019s sending another warning.",
-      "url": "https://www.marketwatch.com/story/this-market-signal-called-the-tech-selloff-now-its-sending-another-warning-f7f8eb9b?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-08T12:00:00Z",
-      "topic": "markets",
-      "tags": [],
       "watch": false
     },
     {
@@ -1341,17 +1353,6 @@
       "url": "https://cointelegraph.com/news/nvidia-may-be-facing-a-more-hostile-post-election-washington-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "source": "Cointelegraph",
       "published": "2026-11-07T07:45:24Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "US Treasury cuts off MEXC over alleged $16B in illicit transactions",
-      "url": "https://cointelegraph.com/news/us-treasury-bans-mexc-over-alleged-16b-illicit-transactions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-06T21:05:25Z",
       "topic": "crypto",
       "tags": [
         "Crypto"
