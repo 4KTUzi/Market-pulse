@@ -1,25 +1,9 @@
 {
-  "generated_at": "2026-11-11T02:58:45Z",
-  "next_update_at": "2026-11-11T03:28:45Z",
+  "generated_at": "2026-11-11T10:46:25Z",
+  "next_update_at": "2026-11-11T11:16:25Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -0.38%, Nasdaq -0.74%, Dow Jones -0.30% at the last close or live price. VIX is 19.5 (moderate). Biggest watchlist move: Nvidia -5.47%. Bitcoin -1.6% over 24h, Ethereum -2.9%. Crypto Fear & Greed: 29 (Fear). 2 of 45 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -0.38%, Nasdaq -0.74%, Dow Jones -0.30% at the last close or live price. VIX is 18.6 (moderate). Biggest watchlist move: Nvidia -5.47%. Bitcoin -0.1% over 24h, Ethereum -1.2%. Crypto Fear & Greed: 29 (Fear). 1 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [
-    {
-      "title": "CPI m/m",
-      "country": "USD",
-      "time": "2026-11-10T13:30:00Z",
-      "impact": "High",
-      "forecast": "0.3%",
-      "previous": "0.6%"
-    },
-    {
-      "title": "Core CPI m/m",
-      "country": "USD",
-      "time": "2026-11-10T13:30:00Z",
-      "impact": "High",
-      "forecast": "0.2%",
-      "previous": "0.3%"
-    },
     {
       "title": "ECB President Lagarde Speaks",
       "country": "EUR",
@@ -141,7 +125,7 @@
         24315.0,
         24579.43,
         25253.14,
-        25065.88
+        25065.87
       ]
     },
     {
@@ -181,7 +165,7 @@
       "symbol": "^RUT",
       "name": "Russell 2000",
       "price": 2821.38,
-      "change": -19.43,
+      "change": -19.44,
       "change_pct": -0.68,
       "currency": "USD",
       "as_of": "2026-11-10T21:30:04Z",
@@ -213,11 +197,11 @@
     {
       "symbol": "^VIX",
       "name": "VIX (fear gauge)",
-      "price": 19.46,
-      "change": -0.46,
-      "change_pct": -2.31,
+      "price": 18.56,
+      "change": -0.9,
+      "change_pct": -4.62,
       "currency": "USD",
-      "as_of": "2026-11-10T21:15:01Z",
+      "as_of": "2026-11-11T10:31:16Z",
       "spark": [
         15.21,
         15.27,
@@ -240,7 +224,8 @@
         28.18,
         25.64,
         19.92,
-        19.46
+        19.46,
+        18.56
       ]
     }
   ],
@@ -281,11 +266,11 @@
     {
       "symbol": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 102.26,
-      "change": 0.03,
-      "change_pct": 0.03,
+      "price": 102.47,
+      "change": 0.24,
+      "change_pct": 0.24,
       "currency": "USD",
-      "as_of": "2026-11-11T02:48:42Z",
+      "as_of": "2026-11-11T10:36:22Z",
       "spark": [
         102.58,
         102.18,
@@ -309,17 +294,17 @@
         102.3,
         101.65,
         102.23,
-        102.26
+        102.47
       ]
     },
     {
       "symbol": "CL=F",
       "name": "Crude oil",
-      "price": 86.73,
-      "change": -0.12,
-      "change_pct": -0.14,
+      "price": 87.34,
+      "change": 1.3,
+      "change_pct": 1.51,
       "currency": "USD",
-      "as_of": "2026-11-11T02:48:42Z",
+      "as_of": "2026-11-11T10:36:18Z",
       "spark": [
         93.74,
         94.14,
@@ -342,17 +327,18 @@
         90.52,
         90.83,
         86.85,
-        86.73
+        86.04,
+        87.34
       ]
     },
     {
       "symbol": "GC=F",
       "name": "Gold",
-      "price": 4051.1,
-      "change": -63.4,
-      "change_pct": -1.54,
+      "price": 4055.9,
+      "change": 25.7,
+      "change_pct": 0.64,
       "currency": "USD",
-      "as_of": "2026-11-11T02:48:42Z",
+      "as_of": "2026-11-11T10:36:20Z",
       "spark": [
         4190.6,
         4177.3,
@@ -375,7 +361,8 @@
         4113.5,
         4074.9,
         4114.5,
-        4051.1
+        4030.2,
+        4055.9
       ]
     }
   ],
@@ -617,14 +604,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 73616,
-      "change_24h": -1.55,
-      "change_7d": -4.66,
-      "market_cap": 1480388838957,
-      "volume_24h": 31884494399,
+      "price": 73961,
+      "change_24h": -0.14,
+      "change_7d": -5.99,
+      "market_cap": 1487457221798,
+      "volume_24h": 33077181921,
       "spark": [
-        76889.3326,
-        77670.4019,
         78312.0475,
         78288.4636,
         80397.9563,
@@ -664,21 +649,21 @@
         74448.3725,
         73703.5701,
         73210.3699,
-        73805.3886
+        73805.3886,
+        73528.1279,
+        73859.9532
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 2058.02,
-      "change_24h": -2.93,
-      "change_7d": -9.67,
-      "market_cap": 251500494060,
-      "volume_24h": 14078294657,
+      "price": 2059.16,
+      "change_24h": -1.19,
+      "change_7d": -11.37,
+      "market_cap": 251672927428,
+      "volume_24h": 13795423347,
       "spark": [
-        2261.3756,
-        2290.951,
         2319.5342,
         2317.3356,
         2423.8196,
@@ -718,21 +703,21 @@
         2102.4402,
         2064.9741,
         2026.7421,
-        2055.6303
+        2055.6303,
+        2052.1857,
+        2069.0703
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 83.25,
-      "change_24h": -3.27,
-      "change_7d": -9.96,
-      "market_cap": 49228346200,
-      "volume_24h": 2937191628,
+      "price": 83.81,
+      "change_24h": -0.61,
+      "change_7d": -10.37,
+      "market_cap": 49569115028,
+      "volume_24h": 2942883613,
       "spark": [
-        91.83,
-        92.6472,
         93.0044,
         92.8579,
         95.6945,
@@ -772,21 +757,21 @@
         85.5123,
         84.0797,
         82.263,
-        83.3123
+        83.3123,
+        83.1382,
+        83.3053
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 1.057,
-      "change_24h": -3.27,
-      "change_7d": -16.46,
-      "market_cap": 67138923993,
-      "volume_24h": 2333137006,
+      "price": 1.064,
+      "change_24h": -1.21,
+      "change_7d": -17.2,
+      "market_cap": 67589173838,
+      "volume_24h": 2203707881,
       "spark": [
-        1.2522,
-        1.2755,
         1.2814,
         1.2812,
         1.3104,
@@ -826,21 +811,21 @@
         1.0887,
         1.0645,
         1.0522,
-        1.0604
+        1.0604,
+        1.0524,
+        1.0614
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 681.36,
-      "change_24h": -1.06,
-      "change_7d": -2.16,
-      "market_cap": 89603340287,
-      "volume_24h": 697101935,
+      "price": 680.97,
+      "change_24h": -0.8,
+      "change_7d": -3.19,
+      "market_cap": 89545546561,
+      "volume_24h": 671582442,
       "spark": [
-        692.0427,
-        697.4039,
         701.1145,
         700.1374,
         716.0036,
@@ -880,21 +865,21 @@
         690.1102,
         683.6364,
         673.5859,
-        677.2568
+        677.2568,
+        680.3748,
+        681.487
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.068351,
-      "change_24h": -1.98,
-      "change_7d": -8.5,
-      "market_cap": 10707702878,
-      "volume_24h": 482747690,
+      "price": 0.06828,
+      "change_24h": -1.37,
+      "change_7d": -9.5,
+      "market_cap": 10701104274,
+      "volume_24h": 514565269,
       "spark": [
-        0.0739,
-        0.0746,
         0.0751,
         0.0748,
         0.0767,
@@ -934,14 +919,16 @@
         0.0697,
         0.0689,
         0.067,
-        0.068
+        0.068,
+        0.0682,
+        0.0683
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2479220158485.8755,
-    "market_cap_change_24h": -4.36,
-    "btc_dominance": 59.7
+    "total_market_cap": 2459146144988.3027,
+    "market_cap_change_24h": -3.41,
+    "btc_dominance": 60.5
   },
   "fear_greed": {
     "value": 29,
@@ -950,10 +937,42 @@
   },
   "news": [
     {
-      "title": "Singapore wants a bigger slice of the global gold market. Is it too late to the party?",
-      "url": "https://www.cnbc.com/2026/11/11/singapore-gold-market-vault-storage.html",
+      "title": "CoreWeave earnings revive AI outlook as Anthropic weighs higher IPO valuation",
+      "url": "https://www.coindesk.com/markets/2026/11/11/coreweave-earnings-revive-ai-outlook-as-anthropic-weighs-higher-ipo-valuation",
+      "source": "CoinDesk",
+      "published": "2026-11-11T10:45:49Z",
+      "topic": "crypto",
+      "tags": [
+        "Earnings",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Why Goldman Sachs is now changing its Federal Reserve interest-rate forecast",
+      "url": "https://www.marketwatch.com/story/why-goldman-sachs-is-now-changing-its-federal-reserve-interest-rate-forecast-3753f968?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T10:37:00Z",
+      "topic": "markets",
+      "tags": [
+        "Rates & central banks"
+      ],
+      "watch": false
+    },
+    {
+      "title": "I\u2019m 63 and want to spend $95,000 on a roof deck for my $500,000 home. Is that a good investment?",
+      "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T10:30:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nissan CEO breaks down how it plans to fight back against Chinese companies, after second outlook cut in months",
+      "url": "https://www.cnbc.com/2026/11/11/nissan-sales-forecast-earnings-china.html",
       "source": "CNBC",
-      "published": "2026-11-11T02:46:56Z",
+      "published": "2026-11-11T10:16:34Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -962,9 +981,215 @@
       "title": "\u2018The thought of living to 100 terrifies me\u2019: Is Social Security a giant Ponzi scheme?",
       "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-11-11T02:15:00Z",
+      "published": "2026-11-11T10:15:00Z",
       "topic": "markets",
       "tags": [],
+      "watch": false
+    },
+    {
+      "title": "CoreWeave stock pops 11% after outlook raise eases AI slowdown concerns",
+      "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
+      "source": "CNBC",
+      "published": "2026-11-11T10:11:37Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "American soldier arrested on suspicion of spying for Russia",
+      "url": "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
+      "source": "CNBC",
+      "published": "2026-11-11T10:06:58Z",
+      "topic": "markets",
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": false
+    },
+    {
+      "title": "CoreWeave\u2019s stock pops as new financing playbook eases debt concerns",
+      "url": "https://www.marketwatch.com/story/coreweaves-stock-pops-as-new-financing-playbook-eases-debt-concerns-70241525?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T10:05:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nvidia shares rebound 4% as Huang faces scrutiny ahead of earnings",
+      "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
+      "source": "CNBC",
+      "published": "2026-11-11T10:03:29Z",
+      "topic": "markets",
+      "tags": [
+        "Earnings"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Tiger Woods has another private, 18-hole golf destination in the works \u2014 this one for Long Island\u2019s Gold Coast",
+      "url": "https://www.marketwatch.com/story/tiger-woods-has-another-private-18-hole-golf-destination-in-the-works-this-one-for-long-islands-gold-coast-7e8e669c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T10:03:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Bitget Wallet reports sevenfold jump in crypto phishing risk alerts",
+      "url": "https://cointelegraph.com/news/bitget-wallet-crypto-phishing-risk-detections-surge?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T10:00:00Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Among full-size SUVs, the 2027 Ford Expedition is worth a look for its spacious seating and mighty engine",
+      "url": "https://www.marketwatch.com/story/among-full-size-suvs-the-2027-ford-expedition-is-worth-a-look-for-its-spacious-seating-and-mighty-engine-2c169852?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T09:59:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Bitmine posts $6.3B net loss for fiscal 2026 as Ether prices slide",
+      "url": "https://cointelegraph.com/news/bitmine-6b-net-loss-eth-treasury-holdings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T09:58:15Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "ECB warns legislative delays could postpone digital euro launch",
+      "url": "https://cointelegraph.com/news/ecb-warns-legislative-delays-digital-euro-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T09:03:49Z",
+      "topic": "crypto",
+      "tags": [
+        "Rates & central banks",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Stock ETF buyers pounce on dip as Bitcoin funds bleed $1.6 billion",
+      "url": "https://cointelegraph.com/markets/bitcoin-etf-outflows-persist-while-equity-investors-buy-the-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T08:55:31Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "SEC enforcement actions fall 24%, crypto cases in spotlight",
+      "url": "https://cointelegraph.com/news/sec-crypto-cases-enforcement-actions-fall-23-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T08:43:30Z",
+      "topic": "crypto",
+      "tags": [
+        "Regulation & legal",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
+      "url": "https://www.cnbc.com/2026/11/11/alibaba-pr.html",
+      "source": "CNBC",
+      "published": "2026-11-11T07:47:54Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Singapore wants a bigger slice of the global gold market. Is it too late to the party?",
+      "url": "https://www.cnbc.com/2026/11/11/singapore-gold-market-vault-storage.html",
+      "source": "CNBC",
+      "published": "2026-11-11T07:02:45Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Investors pivot to defensive stocks as markets enter a \u2018state of alert\u2019",
+      "url": "https://www.cnbc.com/2026/11/11/tech-selloff-defensive-pivot.html",
+      "source": "CNBC",
+      "published": "2026-11-11T06:00:01Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T06:00:00Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Initia confirms second exploit in 3 weeks, $3.27M stolen in latest attack",
+      "url": "https://cointelegraph.com/news/initia-second-crypto-exploit-three-weeks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T05:52:14Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "U.S., China should \u2018harbor no illusions\u2019 as they cooperate, compete on AI, Bessent says",
+      "url": "https://www.cnbc.com/2026/11/11/trump-xi-summit-ai-nvidia-.html",
+      "source": "CNBC",
+      "published": "2026-11-11T05:15:50Z",
+      "topic": "markets",
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Across Protocol restores website after hackers hijack domain",
+      "url": "https://cointelegraph.com/news/across-protocol-restores-website-after-hackers-hijack-domain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T04:42:30Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Bessent reportedly moved to military base over Iranian threats on his life",
+      "url": "https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html",
+      "source": "CNBC",
+      "published": "2026-11-11T04:06:47Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Crypto ally Tom Emmer elected House GOP minority whip",
+      "url": "https://cointelegraph.com/news/crypto-ally-tom-emmer-elected-house-gop-minority-whip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-11T03:07:45Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
       "watch": false
     },
     {
@@ -997,15 +1222,6 @@
       "watch": true
     },
     {
-      "title": "CoreWeave\u2019s stock pops as new financing playbook eases debt concerns",
-      "url": "https://www.marketwatch.com/story/coreweaves-stock-pops-as-new-financing-playbook-eases-debt-concerns-70241525?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-11T01:12:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "\u2018We had the worst fight\u2019: I want my husband to retire at 65, but I don\u2019t want to lose his $280,000 salary. Is that unreasonable?",
       "url": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1024,30 +1240,10 @@
       "watch": false
     },
     {
-      "title": "CFTC warns Kalshi of imminent charges over notification of contracts: Politico",
-      "url": "https://cointelegraph.com/news/cftc-warns-kalshi-imminent-charges-over-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T23:49:51Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
       "title": "Hegseth impeachment effort torpedoed in House",
       "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
       "source": "CNBC",
       "published": "2026-11-10T23:46:41Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Jim Cramer says Anthropic's explosive growth could justify a record-breaking IPO",
-      "url": "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html",
-      "source": "CNBC",
-      "published": "2026-11-10T23:46:35Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -1062,170 +1258,10 @@
       "watch": false
     },
     {
-      "title": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
-      "url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
-      "source": "CNBC",
-      "published": "2026-11-10T23:16:15Z",
-      "topic": "markets",
-      "tags": [
-        "Earnings"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
-      "url": "https://www.cnbc.com/2026/11/10/nvidia-jensen-huang-affair-office.html",
-      "source": "CNBC",
-      "published": "2026-11-10T23:11:34Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Global banks commit $270M to stablecoin venture targeting 2027 launch",
-      "url": "https://cointelegraph.com/news/banks-270m-project-faro-stablecoin-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T23:08:28Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "FDA warns of vision loss risk linked to popular GLP-1 drugs like Wegovy, Zepbound",
-      "url": "https://www.cnbc.com/2026/11/10/fda-warning-vision-loss-glp1-wegovy-zepbound.html",
-      "source": "CNBC",
-      "published": "2026-11-10T23:03:11Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Fossil CEO says turnaround is ahead of plan as sales return to growth",
-      "url": "https://www.cnbc.com/2026/11/10/fossil-fosl-q3-2026-earnings.html",
-      "source": "CNBC",
-      "published": "2026-11-10T22:39:30Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "AMD\u2019s stock fades as investors weigh whether Nvidia\u2019s turmoil will mean lasting wins",
-      "url": "https://www.marketwatch.com/story/amds-stock-fades-as-investors-weigh-whether-nvidias-turmoil-will-mean-lasting-wins-1ecfbc5e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-10T22:37:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Looking to buy the dip in chip stocks? Here\u2019s how to avoid buying too soon.",
-      "url": "https://www.marketwatch.com/story/ignore-the-wild-swings-in-chip-stocks-until-they-reach-these-lines-in-the-sand-feb6e00f?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-10T22:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Nvidia sells off for second day in fallout from Jensen Huang\u2019s affair with alleged spy",
-      "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
-      "source": "CNBC",
-      "published": "2026-11-10T22:08:25Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Meet the former prosecutor Nvidia hired to investigate the Jensen Huang spy scandal",
-      "url": "https://www.marketwatch.com/story/meet-the-former-prosecutor-nvidia-hired-to-investigate-the-jensen-huang-spy-scandal-e8078f67?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-10T22:05:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T22:04:47Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Mississippi Senate: Scott Colom extends tight lead over Hyde-Smith as ballot deadlines hit",
-      "url": "https://www.cnbc.com/2026/11/10/mississippi-senate-scott-colom-hyde-smith.html",
-      "source": "CNBC",
-      "published": "2026-11-10T22:01:52Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Stocks fall as the 10-year Treasury yield nears 5% mark",
-      "url": "https://www.marketwatch.com/story/why-stocks-are-falling-and-10-year-yields-are-climbing-back-near-5-after-tuesdays-inflation-report-389b8392?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-10T21:42:00Z",
-      "topic": "markets",
-      "tags": [
-        "Rates & central banks"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Can crypto trust firms compete with banks in US derivatives settlements?",
-      "url": "https://cointelegraph.com/news/crypto-trust-firms-compete-banks-us-derivatives-settlements?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T21:34:40Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Across Protocol warns users to avoid app amid reports of drained wallets",
-      "url": "https://cointelegraph.com/news/across-protocol-warns-avoid-app-drained-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T21:24:36Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Ava Labs exec says NYSE deal marks end of blockchain\u2019s \u2018general purpose era\u2019",
-      "url": "https://cointelegraph.com/interview/ava-labs-nyse-general-purpose-chains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T21:07:44Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
       "title": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
       "url": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
       "source": "CoinDesk",
       "published": "2026-11-10T20:36:33Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Kimber Digital Securities gains broker-dealer status for tokenized assets",
-      "url": "https://cointelegraph.com/news/kimber-digital-securities-broker-dealer-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T20:26:02Z",
       "topic": "crypto",
       "tags": [
         "Crypto"
@@ -1244,17 +1280,6 @@
       "watch": false
     },
     {
-      "title": "Mercado Bitcoin to resume cash withdrawals after $49M hack",
-      "url": "https://cointelegraph.com/news/pix-withdrawals-resume-mercado-bitcoin-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T18:12:07Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
       "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
       "url": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
       "source": "CoinDesk",
@@ -1264,19 +1289,6 @@
         "Crypto"
       ],
       "watch": false
-    },
-    {
-      "title": "Hot US inflation raises odds of half-point Fed hike in December",
-      "url": "https://cointelegraph.com/news/hot-us-inflation-raises-rate-hike-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-10T17:31:09Z",
-      "topic": "crypto",
-      "tags": [
-        "Rates & central banks",
-        "Inflation & jobs",
-        "Crypto"
-      ],
-      "watch": true
     },
     {
       "title": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
@@ -1377,18 +1389,6 @@
       "watch": false
     },
     {
-      "title": "Bitcoin lags stock rebound in advance of U.S. inflation report",
-      "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report",
-      "source": "CoinDesk",
-      "published": "2026-11-10T11:24:10Z",
-      "topic": "crypto",
-      "tags": [
-        "Inflation & jobs",
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
       "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
       "source": "Federal Reserve",
@@ -1396,17 +1396,6 @@
       "topic": "macro",
       "tags": [
         "Rates & central banks"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Jensen Huang exit odds are low on prediction markets after Nvidia probe",
-      "url": "https://www.cnbc.com/2026/11/09/jensen-huang-nvidia-exit-prediction-markets.html",
-      "source": "CNBC",
-      "published": "2026-11-09T18:46:01Z",
-      "topic": "markets",
-      "tags": [
-        "Regulation & legal"
       ],
       "watch": false
     }
