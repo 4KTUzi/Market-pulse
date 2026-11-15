@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-14T22:57:58Z",
-  "next_update_at": "2026-11-14T23:27:58Z",
+  "generated_at": "2026-11-15T02:34:56Z",
+  "next_update_at": "2026-11-15T03:04:56Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -0.40%, Nasdaq -0.91%, Dow Jones +0.10% at the last close or live price. VIX is 19.3 (moderate). Biggest watchlist move: Meta +2.90%. Bitcoin -7.1% over 24h, Ethereum -9.6%. Crypto Fear & Greed: 13 (Extreme Fear). 3 of 45 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -0.40%, Nasdaq -0.91%, Dow Jones +0.10% at the last close or live price. VIX is 19.3 (moderate). Biggest watchlist move: Meta +2.90%. Bitcoin -4.0% over 24h, Ethereum -4.9%. Crypto Fear & Greed: 10 (Extreme Fear). 4 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [],
   "indices": [
     {
@@ -561,13 +561,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 63519,
-      "change_24h": -7.14,
-      "change_7d": -14.81,
-      "market_cap": 1277496040175,
-      "volume_24h": 42152929748,
+      "price": 64709,
+      "change_24h": -3.97,
+      "change_7d": -17.26,
+      "market_cap": 1301431509315,
+      "volume_24h": 51136535361,
       "spark": [
-        75671.8899,
         75664.7312,
         75726.5649,
         75848.9845,
@@ -608,20 +607,20 @@
         67160.2682,
         67362.9177,
         66786.8048,
-        65845.0136
+        65845.0136,
+        64373.8382
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 1745.93,
-      "change_24h": -9.55,
-      "change_7d": -20.45,
-      "market_cap": 213385716256,
-      "volume_24h": 16614702236,
+      "price": 1806.03,
+      "change_24h": -4.86,
+      "change_7d": -22.51,
+      "market_cap": 220730809263,
+      "volume_24h": 20332853538,
       "spark": [
-        2230.2962,
         2231.7491,
         2232.2251,
         2234.5736,
@@ -662,20 +661,20 @@
         1903.7081,
         1912.2576,
         1892.0262,
-        1841.7101
+        1841.7101,
+        1770.5496
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 69.08,
-      "change_24h": -11.47,
-      "change_7d": -21.46,
-      "market_cap": 40866476323,
-      "volume_24h": 4267743042,
+      "price": 70.76,
+      "change_24h": -6.52,
+      "change_7d": -23.93,
+      "market_cap": 41862612298,
+      "volume_24h": 4617428721,
       "spark": [
-        89.1534,
         89.0292,
         89.1077,
         89.181,
@@ -716,20 +715,20 @@
         75.9148,
         75.9073,
         75.4776,
-        72.778
+        72.778,
+        69.8311
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 0.897854,
-      "change_24h": -11.08,
-      "change_7d": -21.26,
-      "market_cap": 57028664423,
-      "volume_24h": 2996870969,
+      "price": 0.945723,
+      "change_24h": -5.07,
+      "change_7d": -21.76,
+      "market_cap": 60069144889,
+      "volume_24h": 3585599381,
       "spark": [
-        1.1599,
         1.1583,
         1.1625,
         1.1627,
@@ -770,20 +769,20 @@
         0.9961,
         0.9908,
         0.9952,
-        0.9594
+        0.9594,
+        0.9089
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 574.58,
-      "change_24h": -8.93,
-      "change_7d": -16.82,
-      "market_cap": 75563353691,
-      "volume_24h": 1190244154,
+      "price": 589.33,
+      "change_24h": -5.51,
+      "change_7d": -17.83,
+      "market_cap": 77502656190,
+      "volume_24h": 1329629437,
       "spark": [
-        695.0097,
         694.448,
         695.7309,
         697.3499,
@@ -824,20 +823,20 @@
         620.2862,
         618.7912,
         607.1085,
-        590.0405
+        590.0405,
+        577.6872
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.056036,
-      "change_24h": -12.87,
-      "change_7d": -20.29,
-      "market_cap": 8783658679,
-      "volume_24h": 849723746,
+      "price": 0.058277,
+      "change_24h": -7.52,
+      "change_7d": -21.19,
+      "market_cap": 9134963824,
+      "volume_24h": 1009617455,
       "spark": [
-        0.0713,
         0.0712,
         0.0712,
         0.0708,
@@ -878,26 +877,36 @@
         0.0632,
         0.0631,
         0.0625,
-        0.0603
+        0.0603,
+        0.0568
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2163432790629.447,
-    "market_cap_change_24h": -9.24,
-    "btc_dominance": 58.7
+    "total_market_cap": 2196661132727.237,
+    "market_cap_change_24h": -7.82,
+    "btc_dominance": 58.6
   },
   "fear_greed": {
-    "value": 13,
+    "value": 10,
     "label": "Extreme Fear",
-    "week_ago": 25
+    "week_ago": 28
   },
   "news": [
     {
-      "title": "$180 million Van Gogh tests the art market and collector confidence",
-      "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+      "title": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
+      "url": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T00:33:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT\u2019s Duffy",
+      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
       "source": "CNBC",
-      "published": "2026-11-14T22:34:07Z",
+      "published": "2026-11-14T23:21:21Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -906,7 +915,16 @@
       "title": "SpaceX catches upper stage of Starship rocket in historic first",
       "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
       "source": "CNBC",
-      "published": "2026-11-14T21:52:01Z",
+      "published": "2026-11-14T23:10:14Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "$180 million Van Gogh tests the art market and collector confidence",
+      "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+      "source": "CNBC",
+      "published": "2026-11-14T22:34:07Z",
       "topic": "markets",
       "tags": [],
       "watch": false
@@ -957,15 +975,6 @@
       "watch": false
     },
     {
-      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT\u2019s Duffy",
-      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "source": "CNBC",
-      "published": "2026-11-14T18:32:47Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "Should a widow leave her late partner\u2019s home to her stepkids \u2014 or cut off contact with them?",
       "url": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1011,15 +1020,6 @@
       "watch": false
     },
     {
-      "title": "The lonely labor of caregiving: \u2018You shouldn\u2019t have to be rich to take care of the people you love\u2019",
-      "url": "https://www.marketwatch.com/story/if-you-could-change-one-thing-about-caregiving-what-would-it-be-8b20be29?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T17:50:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
       "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
       "source": "CNBC",
@@ -1029,7 +1029,7 @@
       "watch": false
     },
     {
-      "title": "Bitcoin slides to 3-month low below $64,000 as analyst flags fourth capitulation wave",
+      "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
       "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
       "source": "CoinDesk",
       "published": "2026-11-14T16:33:29Z",
@@ -1037,7 +1037,7 @@
       "tags": [
         "Crypto"
       ],
-      "watch": false
+      "watch": true
     },
     {
       "title": "Ethereum scaling project MegaETH slashes staff by 20% as it pursues AI business",
