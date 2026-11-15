@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-15T09:54:08Z",
-  "next_update_at": "2026-11-15T10:24:08Z",
+  "generated_at": "2026-11-15T17:00:36Z",
+  "next_update_at": "2026-11-15T17:30:36Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -0.40%, Nasdaq -0.91%, Dow Jones +0.10% at the last close or live price. VIX is 19.3 (moderate). Biggest watchlist move: Meta +2.90%. Bitcoin -3.1% over 24h, Ethereum -4.6%. Crypto Fear & Greed: 10 (Extreme Fear). 4 of 45 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -0.40%, Nasdaq -0.91%, Dow Jones +0.10% at the last close or live price. VIX is 19.3 (moderate). Biggest watchlist move: Meta +2.90%. Bitcoin -1.0% over 24h, Ethereum -0.6%. Crypto Fear & Greed: 10 (Extreme Fear). 4 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [
     {
       "title": "Fed Chairman Warsh Speaks",
@@ -703,14 +703,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 65338,
-      "change_24h": -3.06,
-      "change_7d": -14.65,
-      "market_cap": 1314092763541,
-      "volume_24h": 55326242277,
+      "price": 64692,
+      "change_24h": -1.01,
+      "change_7d": -14.86,
+      "market_cap": 1301110871504,
+      "volume_24h": 50179008733,
       "spark": [
-        75853.4882,
-        75892.6018,
         75696.0058,
         75687.2315,
         75190.6093,
@@ -750,21 +748,21 @@
         65287.2503,
         64831.8867,
         63431.1056,
-        64929.4105
+        64929.4105,
+        65072.5861,
+        65466.6947
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 1825.76,
-      "change_24h": -4.63,
-      "change_7d": -19.5,
-      "market_cap": 223146865849,
-      "volume_24h": 22007906986,
+      "price": 1814.61,
+      "change_24h": -0.64,
+      "change_7d": -18.96,
+      "market_cap": 221784547642,
+      "volume_24h": 19947785335,
       "spark": [
-        2236.5873,
-        2237.0029,
         2227.793,
         2225.1956,
         2143.1749,
@@ -804,21 +802,21 @@
         1823.6988,
         1785.6344,
         1740.8033,
-        1813.2529
+        1813.2529,
+        1808.3155,
+        1834.3618
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 71.78,
-      "change_24h": -5.53,
-      "change_7d": -20.74,
-      "market_cap": 42467680551,
-      "volume_24h": 5373199006,
+      "price": 71.45,
+      "change_24h": -1.38,
+      "change_7d": -20.26,
+      "market_cap": 42272048626,
+      "volume_24h": 5125370838,
       "spark": [
-        89.1977,
-        89.4596,
         88.9359,
         89.0789,
         87.5512,
@@ -858,21 +856,21 @@
         72.361,
         70.5555,
         69.4144,
-        70.9413
+        70.9413,
+        70.9516,
+        72.7933
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 0.962477,
-      "change_24h": -3.03,
-      "change_7d": -18.02,
-      "market_cap": 61133261889,
-      "volume_24h": 3920171862,
+      "price": 0.951945,
+      "change_24h": -0.6,
+      "change_7d": -17.6,
+      "market_cap": 60464301836,
+      "volume_24h": 3592780755,
       "spark": [
-        1.1622,
-        1.1629,
         1.1544,
         1.1532,
         1.1174,
@@ -912,21 +910,21 @@
         0.9561,
         0.9274,
         0.9222,
-        0.9729
+        0.9729,
+        0.9562,
+        0.9679
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 596.22,
-      "change_24h": -3.69,
-      "change_7d": -15.67,
-      "market_cap": 78409274856,
-      "volume_24h": 1382395479,
+      "price": 591.58,
+      "change_24h": 0.84,
+      "change_7d": -15.16,
+      "market_cap": 77798943305,
+      "volume_24h": 1049664387,
       "spark": [
-        697.5836,
-        697.7331,
         695.6996,
         696.1654,
         688.3629,
@@ -966,21 +964,21 @@
         586.1068,
         582.9961,
         576.1153,
-        595.155
+        595.155,
+        591.3207,
+        597.5698
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.05871,
-      "change_24h": -7.05,
-      "change_7d": -18.39,
-      "market_cap": 9203193011,
-      "volume_24h": 1099533632,
+      "price": 0.058449,
+      "change_24h": -2.61,
+      "change_7d": -18.04,
+      "market_cap": 9162332913,
+      "volume_24h": 1006007384,
       "spark": [
-        0.0711,
-        0.0712,
         0.071,
         0.0711,
         0.0696,
@@ -1020,14 +1018,16 @@
         0.0599,
         0.0578,
         0.0568,
-        0.0584
+        0.0584,
+        0.0583,
+        0.0593
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2232108060694.3286,
-    "market_cap_change_24h": -4.84,
-    "btc_dominance": 58.7
+    "total_market_cap": 2190701606109.833,
+    "market_cap_change_24h": -5.21,
+    "btc_dominance": 59.3
   },
   "fear_greed": {
     "value": 10,
@@ -1036,15 +1036,227 @@
   },
   "news": [
     {
-      "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
-      "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+      "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
+      "url": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
       "source": "CNBC",
-      "published": "2026-11-15T08:34:46Z",
+      "published": "2026-11-15T16:56:40Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Bessent calls for \u2018dramatic shakeup\u2019 at Nvidia, urges outside CEO",
+      "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+      "source": "CNBC",
+      "published": "2026-11-15T16:49:11Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "\u2018We had the worst fight\u2019: I want my husband to retire at 65, but I don\u2019t want to lose his $280,000 salary. Is that unreasonable?",
+      "url": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T16:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "3 big things we're watching in the stock market in the week ahead",
+      "url": "https://www.cnbc.com/investingclub/2026/11/15/3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+      "source": "CNBC",
+      "published": "2026-11-15T15:26:20Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "China\u2019s hottest stocks these days have one thing in common: names that sound like sheep",
+      "url": "https://www.marketwatch.com/story/chinas-hottest-stocks-these-days-have-one-thing-in-common-names-that-sound-like-sheep-6176e521?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T15:22:00Z",
       "topic": "markets",
       "tags": [
-        "Regulation & legal"
+        "Geopolitics & trade"
       ],
       "watch": false
+    },
+    {
+      "title": "\u2018I\u2019m sick of flying\u2019: I paid for priority boarding, but the overhead bins were full. Was I duped?",
+      "url": "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T15:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nvidia is gearing up for one of Wall Street\u2019s most anticipated earnings calls in years",
+      "url": "https://www.marketwatch.com/story/nvidia-is-gearing-up-for-one-of-wall-streets-most-anticipated-earnings-calls-in-years-91855b1e?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T15:00:00Z",
+      "topic": "markets",
+      "tags": [
+        "Earnings"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
+      "url": "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
+      "source": "CNBC",
+      "published": "2026-11-15T14:30:01Z",
+      "topic": "markets",
+      "tags": [
+        "Inflation & jobs"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Enterprise blockchain is going to come back from the dead",
+      "url": "https://cointelegraph.com/opinion/enterprise-blockchain-come-back-from-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-15T14:30:00Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "'We slept here.' Flight delays linger as airlines scramble to recover from ground stop",
+      "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
+      "source": "CNBC",
+      "published": "2026-11-15T14:24:18Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "\u2018The thought of living to 100 terrifies me\u2019: Is Social Security a giant Ponzi scheme?",
+      "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T14:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Will the Anthropic IPO create a disturbance in the broader U.S. equity market, like SpaceX did?",
+      "url": "https://www.marketwatch.com/story/will-the-anthropic-ipo-create-a-disturbance-in-the-broader-u-s-equity-market-like-spacex-did-05ba4351?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T14:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Crypto insiders aren't counting on silver linings in Congress' 'lame duck' session",
+      "url": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
+      "source": "CoinDesk",
+      "published": "2026-11-15T14:00:00Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "I'm a psychologist who studies couples\u20145 signs you've fallen into a common rut: 'It builds through small habits that each look harmless'",
+      "url": "https://www.cnbc.com/make-it/2026/11/15/couples-coexisting-without-connecting.html",
+      "source": "CNBC",
+      "published": "2026-11-15T13:48:01Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Should a widow leave her late partner\u2019s home to her stepkids \u2014 or cut off contact with them?",
+      "url": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T13:30:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "The U.S. is turning more socialist under Trump 2.0, one analyst says. What could change with a Democratic-run Congress?",
+      "url": "https://www.marketwatch.com/story/the-u-s-is-turning-more-socialist-under-trump-2-0-one-analyst-says-what-could-change-with-a-democratic-run-congress-95d7ff17?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T13:30:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Rivian, Lucid, Scout CEOs aren\u2019t counting on Democrats to restore EV federal support after midterm wins",
+      "url": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
+      "source": "CNBC",
+      "published": "2026-11-15T13:00:02Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "\u2018It leaves me with a sour taste\u2019: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
+      "url": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T13:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Top Wall Street analysts are bullish on these 3 stocks for the long term",
+      "url": "https://www.cnbc.com/2026/11/15/top-wall-street-analysts-are-bullish-on-these-3-stocks-for-the-long-term.html",
+      "source": "CNBC",
+      "published": "2026-11-15T12:49:07Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Gold and silver are supposed to protect against inflation. So why are both metals tumbling instead?",
+      "url": "https://www.marketwatch.com/story/gold-and-silver-are-supposed-to-protect-against-inflation-so-why-are-both-metals-tumbling-instead-1735eca7?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-15T12:30:00Z",
+      "topic": "markets",
+      "tags": [
+        "Inflation & jobs"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Anthropic\u2019s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+      "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+      "source": "CNBC",
+      "published": "2026-11-15T12:00:01Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-15T11:18:48Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Bitcoin falls to four-month low near $62K as crypto selloff deepens",
+      "url": "https://cointelegraph.com/markets/bitcoin-four-month-low-62k-crypto-market-selloff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-15T10:23:17Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": true
     },
     {
       "title": "Coinone warns of phishing, identity theft after customer data breach",
@@ -1078,15 +1290,6 @@
       "watch": false
     },
     {
-      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT\u2019s Duffy",
-      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "source": "CNBC",
-      "published": "2026-11-15T02:53:59Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
       "url": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
       "source": "CoinDesk",
@@ -1096,132 +1299,6 @@
         "Crypto"
       ],
       "watch": true
-    },
-    {
-      "title": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
-      "url": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-15T00:33:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "SpaceX catches upper stage of Starship rocket in historic first",
-      "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
-      "source": "CNBC",
-      "published": "2026-11-14T23:10:14Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "$180 million Van Gogh tests the art market and collector confidence",
-      "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
-      "source": "CNBC",
-      "published": "2026-11-14T22:34:07Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "I\u2019m 63 and spending $95,000 on a roof deck for my $500,000 home. Is that a good investment?",
-      "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T21:31:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "I inherited $1.4 million from my father. Am I wrong to ask my husband of 25 years for a postnuptial agreement?",
-      "url": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T21:00:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018It leaves me with a sour taste\u2019: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
-      "url": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T20:00:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018I\u2019m sick of flying\u2019: I paid for priority boarding, but the overhead bins were full. Was I duped?",
-      "url": "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T19:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
-      "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
-      "source": "CNBC",
-      "published": "2026-11-14T18:48:39Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Should a widow leave her late partner\u2019s home to her stepkids \u2014 or cut off contact with them?",
-      "url": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T18:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018He calls my plans a fantasy\u2019: My husband says we can\u2019t afford a $200,000-a-year retirement. Is he being cheap?",
-      "url": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T18:00:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Here\u2019s how Bernie Sanders wants to keep Social Security solvent \u2018for generations\u2019",
-      "url": "https://www.marketwatch.com/story/heres-how-bernie-sanders-wants-to-keep-social-security-solvent-for-generations-f5666a38?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T17:50:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "The trillion-dollar mistake corporate America is making about retirement",
-      "url": "https://www.marketwatch.com/story/corporate-america-is-making-a-trillion-dollar-mistake-about-retirement-234c8996?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T17:50:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Retirees should be big beneficiaries of the midterms: \u2018Democrats will hold every gavel that matters for aging and public policy\u2019",
-      "url": "https://www.marketwatch.com/story/retirees-should-be-big-beneficiaries-of-the-midterms-democrats-will-hold-every-gavel-that-matters-for-aging-and-public-policy-71e966f0?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-14T17:50:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
-      "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-      "source": "CNBC",
-      "published": "2026-11-14T17:46:06Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
     },
     {
       "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
@@ -1268,26 +1345,6 @@
       "watch": false
     },
     {
-      "title": "Trump doesn\u2019t plan to raise Nvidia, spy issue during China trip: U.S. officials",
-      "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-      "source": "CNBC",
-      "published": "2026-11-14T15:36:47Z",
-      "topic": "markets",
-      "tags": [
-        "Geopolitics & trade"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Rising rents draw Wall Street money to industrial outdoor storage lot investments across the U.S.",
-      "url": "https://www.cnbc.com/2026/11/14/real-estate-rental-income-industrial-storage-market.html",
-      "source": "CNBC",
-      "published": "2026-11-14T15:14:57Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "UK, Singapore, and Thailand central banks test cross-border FX settlement as stablecoins gain ground",
       "url": "https://www.coindesk.com/policy/2026/11/14/uk-singapore-and-thailand-central-banks-test-cross-border-fx-settlement-as-stablecoins-gain-ground",
       "source": "CoinDesk",
@@ -1327,17 +1384,6 @@
       "published": "2026-11-14T12:00:01Z",
       "topic": "markets",
       "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-14T11:28:12Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
       "watch": false
     },
     {
@@ -1439,41 +1485,6 @@
       "watch": false
     },
     {
-      "title": "Kraken parent Payward gains market share as slower trading weighs on earnings",
-      "url": "https://cointelegraph.com/news/kraken-parent-payward-gains-market-share-slower-trading-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-13T21:01:39Z",
-      "topic": "crypto",
-      "tags": [
-        "Earnings",
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "US regulators move ahead on crypto trust charters as Senate scrutiny grows",
-      "url": "https://cointelegraph.com/news/us-regulators-crypto-trust-charters-senate-scrutiny-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-13T20:53:20Z",
-      "topic": "crypto",
-      "tags": [
-        "Regulation & legal",
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
-      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
-      "source": "CoinDesk",
-      "published": "2026-11-13T18:39:58Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
       "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
       "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
       "source": "CNBC",
@@ -1484,17 +1495,6 @@
         "Inflation & jobs"
       ],
       "watch": true
-    },
-    {
-      "title": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
-      "url": "https://www.cnbc.com/2026/11/13/jensen-huang-nvidia-us-china-relations.html",
-      "source": "CNBC",
-      "published": "2026-11-13T02:56:35Z",
-      "topic": "markets",
-      "tags": [
-        "Geopolitics & trade"
-      ],
-      "watch": false
     }
   ],
   "errors": [],
