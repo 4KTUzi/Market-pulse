@@ -1,33 +1,9 @@
 {
-  "generated_at": "2026-11-18T19:33:48Z",
-  "next_update_at": "2026-11-18T20:03:48Z",
+  "generated_at": "2026-11-19T01:28:05Z",
+  "next_update_at": "2026-11-19T01:58:05Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -0.25%, Nasdaq +0.42%, Dow Jones -1.21% at the last close or live price. VIX is 24.3 (moderate). Biggest watchlist move: Amazon +3.67%. Bitcoin -1.5% over 24h, Ethereum -1.8%. Crypto Fear & Greed: 11 (Extreme Fear). 8 of 45 recent headlines are flagged as possible market movers. High-impact events today (UTC): CPI y/y; BOE Gov Bailey Speaks; FOMC Meeting Minutes.",
+  "snapshot": "US stocks: S&P 500 -0.23%, Nasdaq +0.42%, Dow Jones -1.11% at the last close or live price. VIX is 24.6 (moderate). Biggest watchlist move: Amazon +3.88%. Bitcoin -2.7% over 24h, Ethereum -1.9%. Crypto Fear & Greed: 10 (Extreme Fear). 3 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [
-    {
-      "title": "CPI y/y",
-      "country": "GBP",
-      "time": "2026-11-18T07:00:00Z",
-      "impact": "High",
-      "forecast": "3.6%",
-      "previous": "3.5%"
-    },
-    {
-      "title": "BOE Gov Bailey Speaks",
-      "country": "GBP",
-      "time": "2026-11-18T07:30:00Z",
-      "impact": "Medium",
-      "forecast": null,
-      "previous": null
-    },
-    {
-      "title": "ECB Financial Stability Review",
-      "country": "EUR",
-      "time": "2026-11-18T09:00:00Z",
-      "impact": "Medium",
-      "forecast": null,
-      "previous": null
-    },
     {
       "title": "ECB President Lagarde Speaks",
       "country": "EUR",
@@ -113,11 +89,11 @@
     {
       "symbol": "^GSPC",
       "name": "S&P 500",
-      "price": 7322.19,
-      "change": -18.34,
-      "change_pct": -0.25,
+      "price": 7323.63,
+      "change": -16.9,
+      "change_pct": -0.23,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:46Z",
+      "as_of": "2026-11-18T21:57:25Z",
       "spark": [
         7690.73,
         7712.57,
@@ -141,17 +117,17 @@
         7561.67,
         7416.59,
         7340.53,
-        7322.19
+        7323.63
       ]
     },
     {
       "symbol": "^IXIC",
       "name": "Nasdaq",
-      "price": 24431.57,
-      "change": 103.19,
+      "price": 24429.88,
+      "change": 101.5,
       "change_pct": 0.42,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:46Z",
+      "as_of": "2026-11-18T22:15:59Z",
       "spark": [
         26430.89,
         26424.82,
@@ -175,17 +151,17 @@
         25136.27,
         24509.76,
         24328.38,
-        24431.57
+        24429.88
       ]
     },
     {
       "symbol": "^DJI",
       "name": "Dow Jones",
-      "price": 50146.92,
-      "change": -612.5,
-      "change_pct": -1.21,
+      "price": 50198.17,
+      "change": -561.25,
+      "change_pct": -1.11,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:45Z",
+      "as_of": "2026-11-18T21:57:27Z",
       "spark": [
         51966.03,
         52495.88,
@@ -209,17 +185,17 @@
         52347.55,
         51608.17,
         50759.42,
-        50146.92
+        50198.17
       ]
     },
     {
       "symbol": "^RUT",
       "name": "Russell 2000",
-      "price": 2721.26,
-      "change": 19.39,
-      "change_pct": 0.72,
+      "price": 2714.31,
+      "change": 12.44,
+      "change_pct": 0.46,
       "currency": "USD",
-      "as_of": "2026-11-18T19:18:45Z",
+      "as_of": "2026-11-18T21:30:13Z",
       "spark": [
         2728.3,
         2773.42,
@@ -243,17 +219,17 @@
         2790.49,
         2742.94,
         2701.87,
-        2721.26
+        2714.31
       ]
     },
     {
       "symbol": "^VIX",
       "name": "VIX (fear gauge)",
-      "price": 24.29,
-      "change": -1.17,
-      "change_pct": -4.6,
+      "price": 24.56,
+      "change": -0.9,
+      "change_pct": -3.53,
       "currency": "USD",
-      "as_of": "2026-11-18T19:18:31Z",
+      "as_of": "2026-11-18T21:15:01Z",
       "spark": [
         18.44,
         17.31,
@@ -277,7 +253,7 @@
         19.3,
         22.91,
         25.46,
-        24.29
+        24.56
       ]
     }
   ],
@@ -285,11 +261,11 @@
     {
       "symbol": "^TNX",
       "name": "US 10Y yield",
-      "price": 5.06,
+      "price": 5.07,
       "change": -0.04,
-      "change_pct": -0.8,
+      "change_pct": -0.73,
       "currency": "USD",
-      "as_of": "2026-11-18T19:18:35Z",
+      "as_of": "2026-11-18T19:59:55Z",
       "spark": [
         5.14,
         5.12,
@@ -313,17 +289,17 @@
         5.15,
         5.12,
         5.1,
-        5.06
+        5.07
       ]
     },
     {
       "symbol": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 103.84,
-      "change": 0.35,
-      "change_pct": 0.34,
+      "price": 103.82,
+      "change": 0.33,
+      "change_pct": 0.32,
       "currency": "USD",
-      "as_of": "2026-11-18T19:23:45Z",
+      "as_of": "2026-11-19T01:18:00Z",
       "spark": [
         101.98,
         101.73,
@@ -347,17 +323,17 @@
         103.41,
         103.55,
         103.49,
-        103.84
+        103.82
       ]
     },
     {
       "symbol": "CL=F",
       "name": "Crude oil",
-      "price": 82.2,
-      "change": -3.81,
-      "change_pct": -4.43,
+      "price": 82.43,
+      "change": -3.58,
+      "change_pct": -4.16,
       "currency": "USD",
-      "as_of": "2026-11-18T19:23:44Z",
+      "as_of": "2026-11-19T01:18:00Z",
       "spark": [
         103.66,
         101.79,
@@ -381,17 +357,17 @@
         88.56,
         85.72,
         86.01,
-        82.2
+        82.43
       ]
     },
     {
       "symbol": "GC=F",
       "name": "Gold",
-      "price": 3730.5,
-      "change": -133.7,
-      "change_pct": -3.46,
+      "price": 3751.2,
+      "change": -113.0,
+      "change_pct": -2.92,
       "currency": "USD",
-      "as_of": "2026-11-18T19:23:44Z",
+      "as_of": "2026-11-19T01:18:00Z",
       "spark": [
         4160.1,
         4142.6,
@@ -415,7 +391,7 @@
         3886.3,
         3853.0,
         3864.2,
-        3730.5
+        3751.2
       ]
     }
   ],
@@ -423,11 +399,11 @@
     {
       "symbol": "AAPL",
       "name": "Apple",
-      "price": 352.48,
-      "change": 0.57,
-      "change_pct": 0.16,
+      "price": 352.45,
+      "change": -0.33,
+      "change_pct": -0.09,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:44Z",
+      "as_of": "2026-11-18T21:00:01Z",
       "spark": [
         342.94,
         339.5,
@@ -450,18 +426,17 @@
         354.88,
         356.27,
         352.78,
-        351.91,
-        352.48
+        351.91
       ]
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "price": 507.17,
-      "change": 0.93,
-      "change_pct": 0.18,
+      "price": 508.29,
+      "change": -9.7,
+      "change_pct": -1.87,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:44Z",
+      "as_of": "2026-11-18T21:00:01Z",
       "spark": [
         533.52,
         531.87,
@@ -484,18 +459,17 @@
         523.0,
         523.88,
         517.99,
-        506.24,
-        507.17
+        506.24
       ]
     },
     {
       "symbol": "NVDA",
       "name": "Nvidia",
-      "price": 151.4,
-      "change": -4.06,
-      "change_pct": -2.61,
+      "price": 150.96,
+      "change": -5.18,
+      "change_pct": -3.32,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:46Z",
+      "as_of": "2026-11-18T21:00:00Z",
       "spark": [
         217.09,
         216.47,
@@ -518,18 +492,17 @@
         166.19,
         162.85,
         156.14,
-        155.46,
-        151.4
+        155.46
       ]
     },
     {
       "symbol": "AMZN",
       "name": "Amazon",
-      "price": 267.35,
-      "change": 9.45,
-      "change_pct": 3.67,
+      "price": 267.74,
+      "change": 9.99,
+      "change_pct": 3.88,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:42Z",
+      "as_of": "2026-11-18T21:00:00Z",
       "spark": [
         262.45,
         262.63,
@@ -552,18 +525,17 @@
         267.44,
         266.66,
         257.75,
-        257.89,
-        267.35
+        257.89
       ]
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet",
-      "price": 283.93,
-      "change": 3.72,
-      "change_pct": 1.33,
+      "price": 282.44,
+      "change": -1.28,
+      "change_pct": -0.45,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:44Z",
+      "as_of": "2026-11-18T21:00:01Z",
       "spark": [
         344.18,
         340.28,
@@ -586,18 +558,17 @@
         298.7,
         295.77,
         283.72,
-        280.2,
-        283.92
+        280.2
       ]
     },
     {
       "symbol": "META",
       "name": "Meta",
-      "price": 614.85,
-      "change": -4.02,
-      "change_pct": -0.65,
+      "price": 616.38,
+      "change": -10.03,
+      "change_pct": -1.6,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:43Z",
+      "as_of": "2026-11-18T21:00:01Z",
       "spark": [
         705.44,
         694.25,
@@ -620,18 +591,17 @@
         623.61,
         641.69,
         626.41,
-        618.87,
-        614.85
+        618.87
       ]
     },
     {
       "symbol": "TSLA",
       "name": "Tesla",
-      "price": 382.71,
-      "change": 2.6,
-      "change_pct": 0.68,
+      "price": 383.72,
+      "change": 3.98,
+      "change_pct": 1.05,
       "currency": "USD",
-      "as_of": "2026-11-18T19:33:45Z",
+      "as_of": "2026-11-18T21:00:00Z",
       "spark": [
         368.06,
         373.71,
@@ -654,8 +624,7 @@
         397.45,
         390.22,
         379.74,
-        380.11,
-        382.71
+        380.11
       ]
     }
   ],
@@ -664,394 +633,352 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 62778,
-      "change_24h": -1.46,
-      "change_7d": -15.22,
-      "market_cap": 1262947070283,
-      "volume_24h": 29625309265,
+      "price": 62705,
+      "change_24h": -2.71,
+      "change_7d": -14.68,
+      "market_cap": 1261449764962,
+      "volume_24h": 30800088860,
       "spark": [
-        74443.5087,
-        73848.9995,
-        73726.024,
-        73447.0094,
-        73389.9198,
-        71556.4977,
-        71690.3578,
-        71340.7938,
-        70188.1293,
-        69030.2686,
-        69289.6994,
-        68909.1788,
-        68930.6102,
-        68207.5491,
-        67621.8687,
-        67327.3659,
-        67240.3031,
-        65874.6706,
-        65517.9501,
-        63499.563,
-        64899.0306,
-        64438.4953,
-        65548.5591,
-        64763.9991,
-        64688.6449,
-        65213.8934,
-        65138.915,
-        64692.5039,
-        64533.1282,
-        65141.7693,
-        64998.0686,
-        65275.1339,
-        64444.5169,
-        64499.9087,
-        64048.4746,
-        64948.6488,
-        63704.6016,
-        64671.7408,
-        64268.5181,
-        64554.7931,
-        64304.4466,
-        63586.7297
+        74001.9095,
+        73653.398,
+        73514.621,
+        72825.919,
+        71695.047,
+        71387.6642,
+        71052.3393,
+        68532.5165,
+        68653.2157,
+        69142.0219,
+        68639.521,
+        68823.0955,
+        68274.2597,
+        67054.6103,
+        66942.4705,
+        66955.0931,
+        65287.2503,
+        64831.8867,
+        63431.1056,
+        64929.4105,
+        65072.5861,
+        65466.6947,
+        64675.8491,
+        65097.862,
+        64920.5193,
+        64769.5365,
+        64420.5831,
+        64103.9256,
+        64864.5441,
+        64999.9403,
+        64583.2905,
+        65004.5189,
+        64284.5474,
+        65007.6903,
+        63699.6523,
+        63911.9194,
+        64726.9425,
+        64358.8737,
+        64619.3319,
+        64030.4411,
+        62656.5153,
+        62503.282
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 1758.76,
-      "change_24h": -1.79,
-      "change_7d": -15.35,
-      "market_cap": 215033905952,
-      "volume_24h": 10457704912,
+      "price": 1775.9,
+      "change_24h": -1.85,
+      "change_7d": -13.25,
+      "market_cap": 217092783873,
+      "volume_24h": 10333540546,
       "spark": [
-        2081.9919,
-        2054.1931,
-        2055.7338,
-        2042.7708,
-        2042.5216,
-        2002.8954,
-        2014.7586,
-        2012.1578,
-        1988.8633,
-        1937.8959,
-        1950.1293,
-        1948.5923,
-        1942.8425,
-        1922.7649,
-        1910.4094,
-        1903.9015,
-        1907.3998,
-        1852.2438,
-        1829.7901,
-        1743.7547,
-        1816.3523,
-        1791.9855,
-        1830.1156,
-        1807.2782,
-        1814.29,
-        1827.3782,
-        1824.1725,
-        1816.5476,
-        1808.1019,
-        1846.0869,
-        1819.8584,
-        1826.8843,
-        1812.7451,
-        1824.6331,
-        1786.64,
-        1812.8973,
-        1788.1438,
-        1813.0308,
-        1802.236,
-        1808.1568,
-        1805.0133,
-        1773.8255
+        2059.8868,
+        2048.2841,
+        2047.9829,
+        2020.3753,
+        2005.7451,
+        2014.6092,
+        2009.5561,
+        1924.218,
+        1930.5488,
+        1957.67,
+        1926.4163,
+        1945.8765,
+        1930.2272,
+        1898.1782,
+        1893.6605,
+        1898.7511,
+        1823.6988,
+        1785.6344,
+        1740.8033,
+        1813.2529,
+        1808.3155,
+        1834.3618,
+        1814.2332,
+        1825.0527,
+        1814.4247,
+        1817.3388,
+        1804.6094,
+        1798.2958,
+        1827.4843,
+        1819.1833,
+        1813.2922,
+        1833.8008,
+        1818.5673,
+        1821.7407,
+        1777.2168,
+        1797.6792,
+        1818.4788,
+        1802.2234,
+        1809.8918,
+        1794.0085,
+        1746.39,
+        1750.9834
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 73.32,
-      "change_24h": 1.06,
-      "change_7d": -13.45,
-      "market_cap": 43407767848,
-      "volume_24h": 2407514714,
+      "price": 73.21,
+      "change_24h": -1.65,
+      "change_7d": -11.55,
+      "market_cap": 43331873742,
+      "volume_24h": 2214131183,
       "spark": [
-        84.9814,
-        83.3606,
-        83.3278,
-        82.6318,
-        82.8663,
-        81.1066,
-        81.5227,
-        81.3892,
-        80.1567,
-        80.092,
-        80.4181,
-        80.6859,
-        80.0683,
-        77.6845,
-        76.1173,
-        75.6607,
-        75.6748,
-        74.0322,
-        72.197,
-        69.091,
-        71.3278,
-        70.4472,
-        72.1058,
-        71.3417,
-        71.0923,
-        72.4318,
-        72.2064,
-        71.2192,
-        71.6344,
-        71.7587,
-        71.4005,
-        71.6861,
-        71.6878,
-        72.5896,
-        72.0574,
-        73.7109,
-        72.3788,
-        74.0109,
-        74.4758,
-        74.6542,
-        74.6457,
-        74.0538
+        83.5309,
+        83.0156,
+        82.895,
+        82.1133,
+        81.347,
+        81.2861,
+        81.5116,
+        78.3285,
+        79.7132,
+        80.6241,
+        79.54,
+        79.88,
+        77.6584,
+        75.5229,
+        75.1886,
+        75.5597,
+        72.361,
+        70.5555,
+        69.4144,
+        70.9413,
+        70.9516,
+        72.7933,
+        71.4016,
+        71.874,
+        71.923,
+        71.551,
+        70.8093,
+        70.6438,
+        71.3466,
+        71.3549,
+        71.4561,
+        72.9746,
+        72.3802,
+        73.606,
+        72.0004,
+        72.9941,
+        74.9017,
+        74.8664,
+        74.7036,
+        74.2366,
+        72.6916,
+        72.9359
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 0.971616,
-      "change_24h": 1.14,
-      "change_7d": -8.32,
-      "market_cap": 61736859211,
-      "volume_24h": 1710655764,
+      "price": 0.962129,
+      "change_24h": -1.19,
+      "change_7d": -8.03,
+      "market_cap": 61131251384,
+      "volume_24h": 1611272210,
       "spark": [
-        1.0624,
-        1.053,
-        1.0503,
-        1.0406,
-        1.0494,
-        1.0253,
-        1.0296,
-        1.0352,
-        1.0198,
-        1.0234,
+        1.0571,
+        1.0435,
+        1.0444,
+        1.0361,
+        1.024,
+        1.0353,
+        1.0345,
+        1.0049,
+        1.0268,
+        1.019,
+        1.0159,
         1.0222,
-        1.0322,
-        1.0238,
-        1.0073,
-        1.0033,
-        0.9934,
-        0.9903,
-        0.9821,
-        0.9538,
-        0.898,
-        0.9547,
-        0.9585,
-        0.9648,
+        1.0086,
+        0.9955,
+        0.9827,
+        0.9916,
         0.9561,
-        0.9522,
-        0.9706,
-        0.9657,
-        0.9552,
-        0.9537,
-        0.9635,
-        0.9594,
-        0.958,
-        0.9552,
-        0.9581,
-        0.9557,
-        0.9717,
-        0.9572,
-        0.9731,
-        0.9735,
-        0.9851,
-        0.9984,
-        0.9851
+        0.9274,
+        0.9222,
+        0.9729,
+        0.9562,
+        0.9679,
+        0.9512,
+        0.9608,
+        0.9641,
+        0.9576,
+        0.9517,
+        0.9486,
+        0.9599,
+        0.9551,
+        0.9533,
+        0.966,
+        0.9569,
+        0.971,
+        0.9567,
+        0.9674,
+        0.9769,
+        0.9793,
+        0.9986,
+        0.9823,
+        0.9692,
+        0.9666
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 580.01,
-      "change_24h": -1.28,
-      "change_7d": -15.05,
-      "market_cap": 76297567676,
-      "volume_24h": 657512032,
+      "price": 581.16,
+      "change_24h": -2.02,
+      "change_7d": -14.06,
+      "market_cap": 76437119361,
+      "volume_24h": 617345621,
       "spark": [
-        686.7232,
-        680.3115,
-        679.4749,
-        672.0265,
-        670.4091,
-        652.4802,
-        654.3253,
-        653.4309,
-        645.8485,
-        633.452,
-        639.0419,
-        637.9381,
-        636.2059,
-        629.414,
-        625.5104,
-        618.7199,
-        617.8297,
-        599.3769,
-        588.4005,
-        574.4013,
-        593.8257,
-        590.5783,
-        597.8489,
-        590.1398,
-        590.8871,
-        595.6577,
-        594.7604,
-        591.4097,
-        590.9347,
-        592.0564,
-        590.7344,
-        593.2552,
-        589.9824,
-        592.2288,
-        586.666,
-        591.5877,
-        586.866,
-        592.7259,
-        591.3245,
-        591.825,
-        589.7095,
-        586.8832
+        681.03,
+        675.9302,
+        672.0205,
+        659.0765,
+        655.8941,
+        653.839,
+        655.9128,
+        631.6961,
+        630.627,
+        640.0306,
+        630.3314,
+        637.2371,
+        630.2919,
+        616.6027,
+        613.747,
+        613.6236,
+        586.1068,
+        582.9961,
+        576.1153,
+        595.155,
+        591.3207,
+        597.5698,
+        591.4649,
+        594.5859,
+        594.2518,
+        589.8663,
+        589.3719,
+        586.6849,
+        590.6881,
+        591.3951,
+        590.1115,
+        594.662,
+        591.2853,
+        593.7186,
+        584.2134,
+        588.9035,
+        595.1219,
+        591.4936,
+        590.9751,
+        588.7939,
+        579.0462,
+        577.9038
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.058944,
-      "change_24h": 0.27,
-      "change_7d": -14.43,
-      "market_cap": 9247912785,
-      "volume_24h": 386440121,
+      "price": 0.058527,
+      "change_24h": -1.47,
+      "change_7d": -12.6,
+      "market_cap": 9178022332,
+      "volume_24h": 362870876,
       "spark": [
-        0.0687,
-        0.0674,
-        0.0675,
-        0.0668,
+        0.0676,
+        0.0671,
         0.0669,
-        0.065,
-        0.066,
         0.0663,
-        0.0653,
-        0.0644,
-        0.0651,
+        0.0657,
         0.0658,
-        0.0655,
-        0.0641,
-        0.0633,
+        0.0664,
+        0.0632,
+        0.0645,
+        0.0653,
+        0.0649,
+        0.0653,
+        0.0646,
         0.063,
-        0.0629,
-        0.0613,
-        0.06,
-        0.0561,
-        0.0586,
-        0.0579,
-        0.0592,
-        0.0585,
-        0.0587,
-        0.0594,
-        0.0594,
-        0.0589,
-        0.0587,
-        0.0595,
-        0.0594,
-        0.0592,
-        0.0587,
-        0.0589,
+        0.0624,
+        0.0627,
+        0.0599,
+        0.0578,
+        0.0568,
+        0.0584,
         0.0583,
         0.0593,
-        0.0586,
-        0.0596,
-        0.0591,
+        0.0584,
+        0.0589,
         0.0593,
+        0.0587,
+        0.0586,
+        0.0583,
+        0.0596,
+        0.0593,
+        0.0587,
+        0.0593,
+        0.0588,
         0.0594,
-        0.0592
+        0.0582,
+        0.0594,
+        0.0597,
+        0.0592,
+        0.0596,
+        0.0592,
+        0.0582,
+        0.0585
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2172260224726.4888,
-    "market_cap_change_24h": -3.58,
-    "btc_dominance": 58.1
+    "total_market_cap": 2171079993094.9639,
+    "market_cap_change_24h": -4.86,
+    "btc_dominance": 58.0
   },
   "fear_greed": {
-    "value": 11,
+    "value": 10,
     "label": "Extreme Fear",
-    "week_ago": 29
+    "week_ago": 28
   },
   "news": [
     {
-      "title": "I\u2019m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
-      "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
+      "title": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
+      "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+      "source": "CNBC",
+      "published": "2026-11-19T01:13:20Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Palo Alto Networks\u2019 stock gets a fresh AI-fueled boost from earnings",
+      "url": "https://www.marketwatch.com/story/palo-alto-networks-stock-soars-as-earnings-show-ai-has-upped-the-stakes-for-cybersecurity-308e34b8?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-11-18T19:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
-      "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-      "source": "CNBC",
-      "published": "2026-11-18T19:26:32Z",
-      "topic": "markets",
-      "tags": [
-        "Rates & central banks",
-        "Inflation & jobs"
-      ],
-      "watch": true
-    },
-    {
-      "title": "Nvidia interim CEO Kress tells employees \u2018let\u2019s move forward\u2019 at first all-hands meeting since Jensen Huang exit",
-      "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
-      "source": "CNBC",
-      "published": "2026-11-18T19:21:59Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
-      "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
-      "source": "CNBC",
-      "published": "2026-11-18T19:17:27Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Fed minutes show growing unease about the outlook for inflation",
-      "url": "https://www.marketwatch.com/story/fed-minutes-show-growing-unease-about-the-outlook-for-inflation-59e3c13d?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T19:12:00Z",
-      "topic": "markets",
-      "tags": [
-        "Rates & central banks",
-        "Inflation & jobs"
-      ],
-      "watch": true
-    },
-    {
-      "title": "Nvidia's earnings report had something for the bulls, bears and everyone in between",
-      "url": "https://www.cnbc.com/investingclub/2026/11/18/nvidias-earnings-report-had-something-for-the-bulls-bears-and-everyone-in-between.html",
-      "source": "CNBC",
-      "published": "2026-11-18T19:07:39Z",
+      "published": "2026-11-19T01:02:00Z",
       "topic": "markets",
       "tags": [
         "Earnings"
@@ -1059,13 +986,288 @@
       "watch": false
     },
     {
-      "title": "Nvidia reverses, metals crash ahead of Anthropic IPO: Options Action Live",
-      "url": "https://www.cnbc.com/2026/11/18/nvidia-reverses-metals-crash-ahead-of-anthropic-ipo-options-action-live.html",
-      "source": "CNBC",
-      "published": "2026-11-18T19:01:42Z",
+      "title": "\u2018I\u2019ve been a stay-at-home mom\u2019: I\u2019m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
+      "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-19T01:00:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
+    },
+    {
+      "title": "Fed officials saw October rate hold as a \u2018close call,\u2019 minutes show",
+      "url": "https://cointelegraph.com/markets/fed-officials-saw-october-rate-hold-as-close-call-minutes-show?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-19T00:35:49Z",
+      "topic": "crypto",
+      "tags": [
+        "Rates & central banks",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Another U.S. appellate court goes against Kalshi, building the industry's legal headwinds",
+      "url": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
+      "source": "CoinDesk",
+      "published": "2026-11-19T00:33:46Z",
+      "topic": "crypto",
+      "tags": [
+        "Regulation & legal",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "One of the world's most contested seas is proving too much for Asia's leaders to resolve",
+      "url": "https://www.cnbc.com/2026/11/19/south-china-sea-china-asean-coc.html",
+      "source": "CNBC",
+      "published": "2026-11-19T00:31:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Should I sell my stocks and buy real estate \u2014 or ride out the storm?",
+      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-19T00:30:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Kash Patel skips House hearing after Mar-a-Lago gala with $50,000 access",
+      "url": "https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html",
+      "source": "CNBC",
+      "published": "2026-11-19T00:08:14Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Palo Alto inks $4.5 billion deal for AI startup Applied Compute, shares pop 7% on earnings",
+      "url": "https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html",
+      "source": "CNBC",
+      "published": "2026-11-19T00:07:06Z",
+      "topic": "markets",
+      "tags": [
+        "Earnings"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Inside India newsletter: Foreign flows helped the market recover. Now it faces the inflation test",
+      "url": "https://www.cnbc.com/2026/11/19/india-inflation-foreign-investor-nifty50.html",
+      "source": "CNBC",
+      "published": "2026-11-19T00:01:23Z",
+      "topic": "markets",
+      "tags": [
+        "Inflation & jobs"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Nvidia interim CEO Kress tells employees \u2018let\u2019s move forward\u2019 at first all-hands meeting since Jensen Huang exit",
+      "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
+      "source": "CNBC",
+      "published": "2026-11-18T23:45:50Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Big bets against AI debt, from CoreWeave to Oracle and the Mag 7, could soon hit the ETF market",
+      "url": "https://www.cnbc.com/2026/11/18/ai-credit-default-swaps-coreweave-debt.html",
+      "source": "CNBC",
+      "published": "2026-11-18T23:38:55Z",
+      "topic": "markets",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "What the \u2018death cross\u2019 in small-cap stocks means for the rest of the market",
+      "url": "https://www.marketwatch.com/story/what-the-death-cross-in-small-cap-stocks-means-for-the-rest-of-the-stock-market-edd8e86e?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T23:12:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "How copper\u2019s plunge could hurt the AI buildout",
+      "url": "https://www.marketwatch.com/story/coppers-plunge-could-make-the-ai-data-center-buildout-more-painful-7057f41c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T23:02:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "The stock market is being rocked by the biggest shake-up in a generation as tech falls behind",
+      "url": "https://www.marketwatch.com/story/the-stock-market-is-being-rocked-by-the-biggest-shake-up-in-a-generation-as-tech-falls-behind-66c1f281?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T22:53:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Retail investor enthusiasm for Anthropic IPO to rival SpaceX debut",
+      "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-retail-investors.html",
+      "source": "CNBC",
+      "published": "2026-11-18T22:37:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nvidia\u2019s booming demand is \u2018hard to ignore,\u2019 but these four questions loom over the stock",
+      "url": "https://www.marketwatch.com/story/what-wall-street-analysts-are-now-saying-after-nvidias-beat-and-raise-quarter-9311c85d?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T22:31:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO\u2019s venture capital business, Tribe",
+      "url": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
+      "source": "CoinDesk",
+      "published": "2026-11-18T22:30:00Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-18T22:09:15Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Is Social Security a Ponzi scheme? No, but fear is fueling such talk.",
+      "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T22:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Has the stock market\u2019s slump hit bottom yet? Here\u2019s what these contrarian indicators say.",
+      "url": "https://www.marketwatch.com/story/has-the-stock-markets-correction-hit-bottom-yet-heres-what-these-contrarian-indicators-say-f9104879?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T21:58:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Tether invokes The Big Short in swipe at S&P over USDT reserve risks",
+      "url": "https://cointelegraph.com/news/tether-usdt-sp-stability-assessment-reserve-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-18T21:57:35Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "What\u2019s next for the AI trade after Nvidia\u2019s blowout results are met with a shrug",
+      "url": "https://www.marketwatch.com/story/whats-next-for-the-ai-trade-after-nvidias-blowout-results-are-met-with-a-shrug-853c7abe?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-18T21:19:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Ledger warns Berlin customers as hardware wallet tampering investigation expands",
+      "url": "https://cointelegraph.com/news/ledger-warns-berlin-customers-hardware-wallet-investigation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-18T21:13:58Z",
+      "topic": "crypto",
+      "tags": [
+        "Regulation & legal",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "CEO turned informant: How the FDA built a case against executives promising cheap medications",
+      "url": "https://www.cnbc.com/2026/11/18/fda-canarx-case-informant.html",
+      "source": "CNBC",
+      "published": "2026-11-18T21:07:14Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nvidia sinks after earnings, dragging down neoclouds CoreWeave, Iren",
+      "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html",
+      "source": "CNBC",
+      "published": "2026-11-18T21:06:49Z",
+      "topic": "markets",
+      "tags": [
+        "Earnings"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Bain Capital Crypto leads $110M Variational round at $1.5B valuation",
+      "url": "https://cointelegraph.com/news/variational-series-b-bain-capital-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-18T20:32:06Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Binance says it obtained $6.5B worldwide freezing order after hack",
+      "url": "https://cointelegraph.com/news/binance-says-won-65b-worldwide-freezing-order-after-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-18T20:20:37Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+      "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+      "source": "CNBC",
+      "published": "2026-11-18T19:47:05Z",
+      "topic": "markets",
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
+      "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
+      "source": "CNBC",
+      "published": "2026-11-18T19:41:59Z",
+      "topic": "markets",
+      "tags": [
+        "Rates & central banks",
+        "Inflation & jobs"
+      ],
+      "watch": true
     },
     {
       "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
@@ -1073,51 +1275,6 @@
       "source": "Federal Reserve",
       "published": "2026-11-18T19:00:00Z",
       "topic": "macro",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "One of AI's most notorious 'doomers' stands to make billions in Anthropic's IPO",
-      "url": "https://www.cnbc.com/2026/11/18/jaan-tallinn-anthropic-ipo-series-a-investment.html",
-      "source": "CNBC",
-      "published": "2026-11-18T18:43:26Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
-      "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
-      "source": "CNBC",
-      "published": "2026-11-18T18:32:39Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-      "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T18:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018GTA 6\u2019 is the biggest game ever. Take-Two\u2019s stock, delivery apps and podcasts are along for the ride.",
-      "url": "https://www.marketwatch.com/story/gta-6-is-the-biggest-game-ever-take-twos-stock-delivery-apps-and-podcasts-are-along-for-the-ride-71014bf2?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T18:28:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Lowe's posts strong online sales, raises outlook despite slow housing market",
-      "url": "https://www.cnbc.com/2026/11/18/lowes-low-q3-2026-earnings.html",
-      "source": "CNBC",
-      "published": "2026-11-18T18:27:52Z",
-      "topic": "markets",
       "tags": [],
       "watch": false
     },
@@ -1133,62 +1290,6 @@
       "watch": false
     },
     {
-      "title": "Read Jim Cramer\u2019s full interview with Nvidia\u2019s Colette Kress: Demand, buybacks and China",
-      "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-colette-kress-talks-earnings-china-transcript.html",
-      "source": "CNBC",
-      "published": "2026-11-18T18:14:42Z",
-      "topic": "markets",
-      "tags": [
-        "Geopolitics & trade"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Investigators make progress in hunt for cause of FAA ground stop",
-      "url": "https://www.cnbc.com/2026/11/18/faa-ground-stop-router-investigation.html",
-      "source": "CNBC",
-      "published": "2026-11-18T18:13:25Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018It\u2019s downright dirty\u2019: My brother took over our ailing mother\u2019s life and finances. What can I do?",
-      "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T18:00:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Social Security should be shut down, this Republican senator says",
-      "url": "https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T17:46:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Rising healthcare costs push Medicare Part B premiums higher",
-      "url": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T17:28:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "It\u2019s not too late to add U.S. energy companies to your 401(k). They\u2019ve been making out like bandits.",
-      "url": "https://www.marketwatch.com/story/its-not-too-late-to-add-u-s-energy-companies-to-your-401-k-theyve-been-making-out-like-bandits-e77a8d6a?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T17:23:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
       "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
       "url": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
       "source": "CoinDesk",
@@ -1197,24 +1298,6 @@
       "tags": [
         "Crypto"
       ],
-      "watch": false
-    },
-    {
-      "title": "I tried TikTok\u2019s viral \u2018corporate slop lunch hacks\u2019 \u2014 and finally escaped the $20 desk salad",
-      "url": "https://www.marketwatch.com/story/i-tried-tiktoks-viral-corporate-slop-lunch-hacks-and-finally-escaped-the-20-desk-salad-60daf133?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T17:16:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Has the time come to sell my stocks and buy real estate?",
-      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-18T17:15:00Z",
-      "topic": "markets",
-      "tags": [],
       "watch": false
     },
     {
@@ -1262,17 +1345,6 @@
       "watch": false
     },
     {
-      "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-      "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-      "source": "CNBC",
-      "published": "2026-11-18T16:14:10Z",
-      "topic": "markets",
-      "tags": [
-        "Geopolitics & trade"
-      ],
-      "watch": false
-    },
-    {
       "title": "Crypto Long & Short: Crypto exchanges shouldn\u2019t double as the vault",
       "url": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
       "source": "CoinDesk",
@@ -1317,63 +1389,6 @@
       "watch": true
     },
     {
-      "title": "Bitcoin Covenants Part 6: FE Covenants \u2014 Enforcing covenants through cryptographically restricted signing keys",
-      "url": "https://cointelegraph.com/research/bitcoin-covenants-part-6-fe-covenants-enforcing-covenants-through-cryptographically-restricted-signing-keys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-18T14:04:50Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "CoinShares sells all treasury ETH, halves SOL holdings for buybacks",
-      "url": "https://cointelegraph.com/news/coinshares-sells-eth-treasury-holdings-halves-sol-share-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-18T13:42:37Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-18T13:34:00Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Sanctions fears loom over Russia\u2019s regulated crypto trading launch",
-      "url": "https://cointelegraph.com/news/sanctions-fears-russia-crypto-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-18T13:32:19Z",
-      "topic": "crypto",
-      "tags": [
-        "Geopolitics & trade",
-        "Regulation & legal",
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
-      "title": "How to preserve wealth and access funds during a national emergency",
-      "url": "https://cointelegraph.com/magazine/how-to-preserve-wealth-and-access-it-during-a-national-emergency?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-18T13:30:00Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
       "title": "Bitcoin miner MARA raises $185 million in debt after selling $1 billion BTC to repay loans",
       "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-miner-mara-raises-usd185-million-in-debt-after-selling-usd1-billion-btc-to-repay-loans",
       "source": "CoinDesk",
@@ -1383,17 +1398,6 @@
         "Crypto"
       ],
       "watch": false
-    },
-    {
-      "title": "Tokenized Nvidia market cap surges 159% amid Jensen Huang\u2019s exit",
-      "url": "https://cointelegraph.com/news/tokenized-nvidia-cap-rises-158-stock-loses-750b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-18T12:53:12Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": true
     },
     {
       "title": "Bullish beats revenue estimates as institutional services offset sluggish spot crypto volumes",
@@ -1427,39 +1431,6 @@
       "tags": [
         "Crypto"
       ],
-      "watch": false
-    },
-    {
-      "title": "Bitcoin drops as Nvidia earnings report drives stock index futures higher",
-      "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher",
-      "source": "CoinDesk",
-      "published": "2026-11-18T11:42:52Z",
-      "topic": "crypto",
-      "tags": [
-        "Earnings",
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Bitcoin outpaces gold even as both assets tumble ahead of a likely Fed rate hike",
-      "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-outpaces-gold-even-as-both-assets-tumble-ahead-of-a-likely-fed-rate-hike",
-      "source": "CoinDesk",
-      "published": "2026-11-18T10:58:36Z",
-      "topic": "crypto",
-      "tags": [
-        "Rates & central banks",
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
-      "title": "Putin says EU is losing industry, falling behind competition, ahead of meeting with Trump and Xi",
-      "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
-      "source": "CNBC",
-      "published": "2026-11-18T08:29:35Z",
-      "topic": "markets",
-      "tags": [],
       "watch": false
     }
   ],
