@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T21:05:35Z",
-  "next_update_at": "2026-11-21T21:35:35Z",
+  "generated_at": "2026-11-22T01:13:51Z",
+  "next_update_at": "2026-11-22T01:43:51Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -3.70%, Nasdaq -5.28%, Dow Jones -1.93% at the last close or live price. VIX is 35.9 (elevated). Biggest watchlist move: Nvidia -14.01%. Bitcoin +3.4% over 24h, Ethereum +5.0%. Crypto Fear & Greed: 12 (Extreme Fear). 4 of 45 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -3.70%, Nasdaq -5.28%, Dow Jones -1.93% at the last close or live price. VIX is 35.9 (elevated). Biggest watchlist move: Nvidia -14.01%. Bitcoin +1.9% over 24h, Ethereum +3.8%. Crypto Fear & Greed: 11 (Extreme Fear). 4 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [],
   "indices": [
     {
@@ -561,13 +561,12 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 60358,
-      "change_24h": 3.39,
-      "change_7d": -8.2,
-      "market_cap": 1214071934664,
-      "volume_24h": 58227545799,
+      "price": 60127,
+      "change_24h": 1.86,
+      "change_7d": -6.27,
+      "market_cap": 1209439749590,
+      "volume_24h": 55710535904,
       "spark": [
-        64831.8867,
         63431.1056,
         64929.4105,
         65072.5861,
@@ -608,20 +607,20 @@
         56229.226,
         57716.7893,
         58779.4274,
-        59959.5508
+        59959.5508,
+        60342.1953
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 1683.81,
-      "change_24h": 5.03,
-      "change_7d": -8.27,
-      "market_cap": 205815302562,
-      "volume_24h": 19496069324,
+      "price": 1682.78,
+      "change_24h": 3.78,
+      "change_7d": -4.93,
+      "market_cap": 205694127940,
+      "volume_24h": 17534220100,
       "spark": [
-        1785.6344,
         1740.8033,
         1813.2529,
         1808.3155,
@@ -662,20 +661,20 @@
         1559.2585,
         1625.9988,
         1661.3025,
-        1680.9526
+        1680.9526,
+        1683.2859
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 70.45,
-      "change_24h": 4.52,
-      "change_7d": -2.6,
-      "market_cap": 41705103244,
-      "volume_24h": 3911916357,
+      "price": 70.32,
+      "change_24h": 2.0,
+      "change_7d": -0.03,
+      "market_cap": 41618432410,
+      "volume_24h": 3637179204,
       "spark": [
-        70.5555,
         69.4144,
         70.9413,
         70.9516,
@@ -716,20 +715,20 @@
         65.9766,
         67.2044,
         69.1398,
-        70.5699
+        70.5699,
+        70.4196
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 0.931633,
-      "change_24h": 5.08,
-      "change_7d": -2.24,
-      "market_cap": 59165484004,
-      "volume_24h": 2151937464,
+      "price": 0.930537,
+      "change_24h": 2.46,
+      "change_7d": 1.67,
+      "market_cap": 59086947291,
+      "volume_24h": 2011800817,
       "spark": [
-        0.9274,
         0.9222,
         0.9729,
         0.9562,
@@ -770,20 +769,20 @@
         0.8753,
         0.8856,
         0.9043,
-        0.9286
+        0.9286,
+        0.9322
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 548.49,
-      "change_24h": 2.73,
-      "change_7d": -7.07,
-      "market_cap": 72131779763,
-      "volume_24h": 1027455698,
+      "price": 549.97,
+      "change_24h": 1.92,
+      "change_7d": -5.56,
+      "market_cap": 72325184342,
+      "volume_24h": 958116805,
       "spark": [
-        582.9961,
         576.1153,
         595.155,
         591.3207,
@@ -824,20 +823,20 @@
         512.0749,
         521.1699,
         533.5648,
-        545.9296
+        545.9296,
+        548.5619
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.055186,
-      "change_24h": 4.56,
-      "change_7d": -7.72,
-      "market_cap": 8655582060,
-      "volume_24h": 701304130,
+      "price": 0.055195,
+      "change_24h": 1.45,
+      "change_7d": -3.8,
+      "market_cap": 8655602850,
+      "volume_24h": 657173236,
       "spark": [
-        0.0578,
         0.0568,
         0.0584,
         0.0583,
@@ -878,21 +877,40 @@
         0.0518,
         0.0527,
         0.054,
-        0.055
+        0.055,
+        0.0552
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2091111573986.6938,
-    "market_cap_change_24h": 0.41,
-    "btc_dominance": 58.0
+    "total_market_cap": 2085610593635.6177,
+    "market_cap_change_24h": -0.83,
+    "btc_dominance": 57.9
   },
   "fear_greed": {
-    "value": 12,
+    "value": 11,
     "label": "Extreme Fear",
-    "week_ago": 13
+    "week_ago": 10
   },
   "news": [
+    {
+      "title": "My wife is bankrolling her family\u2019s trips to New York and it\u2019s draining our savings. Should I ask her to stop?",
+      "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-22T00:03:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "I\u2019m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
+      "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-21T23:05:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
     {
       "title": "\u2018It\u2019s downright dirty\u2019: My brother moved in with our ailing mother and closed her bank account. What can I do?",
       "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
@@ -1001,24 +1019,6 @@
       "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
       "source": "CNBC",
       "published": "2026-11-21T16:40:05Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Micron and Sandisk stocks might look like bargains, but analysts say that\u2019s actually a red flag",
-      "url": "https://www.marketwatch.com/story/micron-and-sandisk-stocks-might-look-like-bargains-but-analysts-say-thats-actually-a-red-flag-da1f1f5d?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-21T15:35:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Is it time to sell my stocks?",
-      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-21T15:15:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
