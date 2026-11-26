@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-26T05:25:05Z",
-  "next_update_at": "2026-11-26T05:55:05Z",
+  "generated_at": "2026-11-26T15:43:34Z",
+  "next_update_at": "2026-11-26T16:13:34Z",
   "refresh_minutes": 30,
-  "snapshot": "US stocks: S&P 500 -0.25%, Nasdaq -0.62%, Dow Jones +0.33% at the last close or live price. VIX is 28.3 (elevated). Biggest watchlist move: Nvidia -3.91%. Bitcoin +3.0% over 24h, Ethereum +2.5%. Crypto Fear & Greed: 11 (Extreme Fear). 6 of 45 recent headlines are flagged as possible market movers.",
+  "snapshot": "US stocks: S&P 500 -0.25%, Nasdaq -0.62%, Dow Jones +0.33% at the last close or live price. VIX is 26.8 (elevated). Biggest watchlist move: Nvidia -3.91%. Bitcoin +3.6% over 24h, Ethereum +2.6%. Crypto Fear & Greed: 11 (Extreme Fear). 1 of 45 recent headlines are flagged as possible market movers.",
   "calendar": [
     {
       "title": "Tokyo Core CPI y/y",
@@ -153,11 +153,11 @@
     {
       "symbol": "^VIX",
       "name": "VIX (fear gauge)",
-      "price": 28.29,
-      "change": 1.93,
-      "change_pct": 7.32,
+      "price": 26.77,
+      "change": -1.52,
+      "change_pct": -5.37,
       "currency": "USD",
-      "as_of": "2026-11-25T21:15:01Z",
+      "as_of": "2026-11-26T15:28:31Z",
       "spark": [
         18.39,
         17.52,
@@ -181,7 +181,8 @@
         35.89,
         26.62,
         26.36,
-        28.29
+        28.29,
+        26.77
       ]
     }
   ],
@@ -223,11 +224,11 @@
     {
       "symbol": "DX-Y.NYB",
       "name": "US Dollar Index",
-      "price": 103.81,
-      "change": 0.14,
-      "change_pct": 0.13,
+      "price": 103.76,
+      "change": 0.09,
+      "change_pct": 0.09,
       "currency": "USD",
-      "as_of": "2026-11-26T05:15:03Z",
+      "as_of": "2026-11-26T15:33:32Z",
       "spark": [
         101.96,
         102.32,
@@ -252,17 +253,17 @@
         104.32,
         103.81,
         103.67,
-        103.81
+        103.76
       ]
     },
     {
       "symbol": "CL=F",
       "name": "Crude oil",
-      "price": 84.37,
-      "change": 0.69,
-      "change_pct": 0.82,
+      "price": 84.91,
+      "change": 1.23,
+      "change_pct": 1.47,
       "currency": "USD",
-      "as_of": "2026-11-26T05:13:24Z",
+      "as_of": "2026-11-26T15:33:30Z",
       "spark": [
         101.76,
         99.9,
@@ -287,17 +288,17 @@
         80.17,
         82.05,
         83.68,
-        84.37
+        84.91
       ]
     },
     {
       "symbol": "GC=F",
       "name": "Gold",
-      "price": 3618.7,
-      "change": 82.9,
-      "change_pct": 2.34,
+      "price": 3598.9,
+      "change": 63.1,
+      "change_pct": 1.78,
       "currency": "USD",
-      "as_of": "2026-11-26T05:15:01Z",
+      "as_of": "2026-11-26T15:33:27Z",
       "spark": [
         4038.4,
         4074.6,
@@ -322,7 +323,7 @@
         3651.4,
         3561.9,
         3535.8,
-        3618.7
+        3598.9
       ]
     }
   ],
@@ -571,331 +572,331 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price": 60901,
-      "change_24h": 3.03,
-      "change_7d": -3.58,
-      "market_cap": 1225183021230,
-      "volume_24h": 38790014809,
+      "price": 60356,
+      "change_24h": 3.65,
+      "change_7d": -5.11,
+      "market_cap": 1214218063211,
+      "volume_24h": 31083840287,
       "spark": [
-        63525.8877,
-        63681.8871,
-        63826.6886,
-        62751.6808,
-        62064.757,
-        62051.583,
-        61463.6427,
-        61774.3851,
-        61520.2143,
-        59454.7323,
-        58299.9496,
-        58926.0424,
-        56229.226,
-        57716.7893,
-        58779.4274,
-        59959.5508,
-        60342.1953,
-        60099.3467,
-        59213.605,
-        59721.6286,
-        60759.7852,
-        61179.6334,
-        60837.9606,
-        61227.542,
-        61168.6809,
-        61443.5145,
-        61239.9482,
-        62195.5315,
-        61191.6698,
-        61240.0513,
-        60307.9132,
-        60199.8833,
-        60390.4254,
-        59375.7635,
-        59689.3185,
-        59588.2271,
-        59137.655,
-        59350.5255,
-        58683.0608,
-        58512.2634,
-        60216.3317,
-        60447.389
+        63500.2968,
+        62825.8867,
+        62126.3322,
+        62136.7839,
+        62000.4438,
+        61997.969,
+        61679.2626,
+        58416.6472,
+        59056.1892,
+        58510.2794,
+        57951.5951,
+        57872.5169,
+        60234.788,
+        60056.2843,
+        60049.8841,
+        59384.7106,
+        59059.8029,
+        60783.383,
+        60865.1012,
+        60688.1315,
+        61011.5238,
+        60523.9633,
+        61405.6933,
+        61368.373,
+        62842.9067,
+        61327.2235,
+        61177.3034,
+        60059.0805,
+        60441.3391,
+        59702.161,
+        60355.1438,
+        59827.1649,
+        59898.1398,
+        59165.8641,
+        59164.3274,
+        58816.9621,
+        58131.2191,
+        59708.7463,
+        60047.3596,
+        60653.1261,
+        60485.6503,
+        60459.5168
       ]
     },
     {
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price": 1698.52,
-      "change_24h": 2.48,
-      "change_7d": -5.12,
-      "market_cap": 207649874429,
-      "volume_24h": 13374159747,
+      "price": 1684.98,
+      "change_24h": 2.6,
+      "change_7d": -6.33,
+      "market_cap": 205995282309,
+      "volume_24h": 10472113824,
       "spark": [
-        1798.8959,
-        1801.7746,
-        1804.5268,
-        1768.6576,
-        1759.4164,
-        1754.4832,
-        1725.45,
-        1749.6607,
-        1738.5911,
-        1643.3184,
-        1599.2191,
-        1620.3292,
-        1559.2585,
-        1625.9988,
-        1661.3025,
-        1680.9526,
-        1683.2859,
-        1681.2915,
-        1661.362,
-        1684.906,
-        1705.0817,
-        1721.0323,
-        1718.6265,
-        1718.3276,
-        1725.0654,
-        1723.1053,
-        1720.1734,
-        1767.632,
-        1723.6025,
-        1708.528,
-        1698.1691,
-        1691.2941,
-        1701.3687,
-        1667.0532,
-        1673.6703,
-        1671.3153,
-        1658.1421,
-        1651.3433,
-        1646.1934,
-        1643.1047,
-        1688.2384,
-        1694.9377
+        1796.91,
+        1776.0219,
+        1759.1926,
+        1746.3954,
+        1748.2874,
+        1755.3907,
+        1741.1255,
+        1618.7034,
+        1619.7365,
+        1617.7483,
+        1637.7204,
+        1639.2482,
+        1687.8126,
+        1680.0473,
+        1678.0424,
+        1668.7162,
+        1660.3269,
+        1707.2784,
+        1711.1638,
+        1712.6308,
+        1716.5013,
+        1703.8934,
+        1722.5191,
+        1723.2166,
+        1777.5359,
+        1738.6067,
+        1710.5501,
+        1685.5764,
+        1699.4467,
+        1681.9566,
+        1691.4882,
+        1677.6073,
+        1682.9456,
+        1654.1205,
+        1658.1237,
+        1645.7714,
+        1643.4889,
+        1680.0086,
+        1685.008,
+        1696.4902,
+        1685.5485,
+        1693.1438
       ]
     },
     {
       "id": "solana",
       "symbol": "SOL",
       "name": "Solana",
-      "price": 71.26,
-      "change_24h": 3.84,
-      "change_7d": -4.2,
-      "market_cap": 42197502836,
-      "volume_24h": 3310072859,
+      "price": 70.67,
+      "change_24h": 5.16,
+      "change_7d": -5.42,
+      "market_cap": 41847466023,
+      "volume_24h": 2571307891,
       "spark": [
-        74.5356,
-        74.51,
-        74.8038,
-        73.2076,
-        73.0061,
-        72.9166,
-        72.0762,
-        72.473,
-        71.0964,
-        69.3862,
-        67.3801,
-        68.8486,
-        65.9766,
-        67.2044,
-        69.1398,
-        70.5699,
-        70.4196,
-        70.2126,
-        69.3452,
-        69.7869,
-        70.1562,
-        70.5881,
-        70.0971,
-        70.6599,
-        71.2614,
-        72.3646,
-        72.1449,
-        74.5026,
-        72.7267,
-        72.1096,
-        71.4692,
-        71.1073,
-        70.6158,
-        69.0177,
-        69.2477,
-        69.584,
-        68.6796,
-        68.0382,
-        67.8131,
-        67.7592,
-        70.5403,
-        70.7706
+        74.8575,
+        74.009,
+        73.1849,
+        72.7873,
+        72.8216,
+        72.3705,
+        70.9482,
+        68.8741,
+        69.2275,
+        68.5019,
+        68.1604,
+        68.0442,
+        70.5336,
+        70.679,
+        70.0899,
+        69.4583,
+        69.0643,
+        70.5323,
+        70.246,
+        70.3144,
+        70.2101,
+        70.1719,
+        71.9464,
+        72.2477,
+        76.398,
+        73.1528,
+        71.816,
+        70.94,
+        71.8212,
+        70.3643,
+        69.8524,
+        69.287,
+        69.902,
+        68.7013,
+        68.768,
+        67.7387,
+        67.289,
+        69.7927,
+        70.4833,
+        71.095,
+        70.5987,
+        70.4925
       ]
     },
     {
       "id": "ripple",
       "symbol": "XRP",
       "name": "XRP",
-      "price": 0.961065,
-      "change_24h": 4.75,
-      "change_7d": -1.17,
-      "market_cap": 61043565543,
-      "volume_24h": 2053257179,
+      "price": 0.943221,
+      "change_24h": 4.93,
+      "change_7d": -4.37,
+      "market_cap": 59910210939,
+      "volume_24h": 1673806712,
       "spark": [
-        0.9759,
-        0.9833,
-        0.989,
-        0.9685,
-        0.9618,
-        0.9606,
-        0.9602,
-        0.9593,
-        0.945,
-        0.9101,
-        0.8869,
-        0.9087,
-        0.8753,
-        0.8856,
-        0.9043,
-        0.9286,
-        0.9322,
-        0.9288,
-        0.9198,
-        0.9267,
-        0.9218,
+        0.9863,
+        0.9733,
+        0.9608,
+        0.958,
+        0.9711,
+        0.9624,
+        0.9427,
+        0.906,
+        0.9133,
+        0.9014,
+        0.8988,
+        0.8954,
         0.9293,
-        0.9257,
+        0.9339,
+        0.926,
+        0.9204,
+        0.9146,
+        0.9308,
+        0.9242,
+        0.9286,
         0.9232,
-        0.9323,
-        0.9398,
-        0.9394,
-        0.9728,
-        0.9365,
-        0.9421,
-        0.9502,
-        0.9386,
-        0.9273,
-        0.9103,
-        0.9187,
-        0.9214,
-        0.9178,
-        0.9216,
-        0.9071,
-        0.9055,
-        0.9409,
-        0.9394
+        0.915,
+        0.9392,
+        0.9389,
+        0.9911,
+        0.9492,
+        0.9377,
+        0.9416,
+        0.95,
+        0.9283,
+        0.9222,
+        0.9201,
+        0.9248,
+        0.917,
+        0.9188,
+        0.912,
+        0.9032,
+        0.9284,
+        0.9361,
+        0.9545,
+        0.949,
+        0.949
       ]
     },
     {
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price": 560.02,
-      "change_24h": 3.42,
-      "change_7d": -4.12,
-      "market_cap": 73647691977,
-      "volume_24h": 664668446,
+      "price": 548.69,
+      "change_24h": 2.35,
+      "change_7d": -6.9,
+      "market_cap": 72158190021,
+      "volume_24h": 601912887,
       "spark": [
-        586.8693,
-        589.7519,
-        592.0326,
-        584.0062,
-        580.8028,
-        578.1727,
-        566.836,
-        571.0532,
-        567.3167,
-        547.1065,
-        533.0242,
-        539.0843,
-        512.0749,
-        521.1699,
-        533.5648,
-        545.9296,
-        548.5619,
-        548.9311,
-        540.0711,
-        545.8986,
-        554.0216,
-        559.6186,
-        556.5353,
-        559.5841,
-        557.0205,
-        558.8569,
-        555.7643,
-        565.1984,
-        557.607,
-        557.655,
-        552.6147,
-        549.7366,
-        550.6627,
-        544.3175,
-        548.2836,
-        545.971,
-        541.355,
-        543.0704,
-        539.7515,
-        538.8827,
-        553.8439,
-        554.6489
+        590.3272,
+        586.1135,
+        580.5345,
+        574.6953,
+        572.1947,
+        573.1261,
+        568.7692,
+        538.1112,
+        539.5703,
+        534.6979,
+        525.6198,
+        524.7153,
+        546.4342,
+        547.2775,
+        547.2541,
+        542.3747,
+        538.3352,
+        551.7072,
+        557.4147,
+        558.0076,
+        556.2187,
+        552.6399,
+        556.8884,
+        555.9213,
+        571.4567,
+        559.2459,
+        555.8476,
+        549.615,
+        552.7174,
+        545.1529,
+        551.3311,
+        549.1486,
+        548.9585,
+        540.6985,
+        542.8526,
+        540.8548,
+        535.0076,
+        549.1357,
+        551.1919,
+        557.4028,
+        555.21,
+        550.327
       ]
     },
     {
       "id": "dogecoin",
       "symbol": "DOGE",
       "name": "Dogecoin",
-      "price": 0.056794,
-      "change_24h": 3.98,
-      "change_7d": -3.69,
-      "market_cap": 8911054599,
-      "volume_24h": 477352829,
+      "price": 0.056362,
+      "change_24h": 5.94,
+      "change_7d": -4.98,
+      "market_cap": 8843312493,
+      "volume_24h": 401387923,
       "spark": [
-        0.0592,
-        0.0595,
-        0.0596,
-        0.0584,
-        0.0581,
-        0.058,
-        0.0569,
-        0.0573,
-        0.0565,
-        0.054,
-        0.0527,
-        0.0543,
-        0.0518,
-        0.0527,
-        0.054,
-        0.055,
-        0.0552,
-        0.0551,
-        0.0542,
-        0.0548,
-        0.0551,
-        0.0553,
-        0.0552,
-        0.055,
-        0.0553,
-        0.0557,
-        0.0556,
-        0.0581,
-        0.0566,
-        0.0565,
+        0.0593,
+        0.0588,
+        0.0582,
+        0.0576,
+        0.0577,
+        0.0572,
         0.0563,
-        0.056,
-        0.0555,
-        0.0547,
+        0.0539,
+        0.0545,
+        0.0542,
+        0.0536,
+        0.053,
+        0.0553,
         0.0552,
         0.055,
-        0.0546,
         0.0545,
-        0.0536,
-        0.0535,
+        0.0541,
+        0.0555,
+        0.0551,
+        0.0552,
+        0.0551,
+        0.0545,
+        0.0556,
+        0.0555,
+        0.0589,
+        0.0571,
+        0.0561,
+        0.0561,
+        0.0565,
+        0.0556,
+        0.0553,
+        0.0552,
+        0.0553,
+        0.0546,
+        0.0548,
+        0.054,
+        0.0532,
+        0.0552,
         0.0559,
-        0.0564
+        0.0567,
+        0.0563,
+        0.0565
       ]
     }
   ],
   "crypto_global": {
-    "total_market_cap": 2111393186157.5198,
-    "market_cap_change_24h": -0.15,
-    "btc_dominance": 57.9
+    "total_market_cap": 2092511771475.904,
+    "market_cap_change_24h": 0.27,
+    "btc_dominance": 58.0
   },
   "fear_greed": {
     "value": 11,
@@ -904,19 +905,48 @@
   },
   "news": [
     {
-      "title": "North Korea's Kim calls for nuclear arsenal expansion, says status 'will never change'",
-      "url": "https://www.cnbc.com/2026/11/26/north-korea-kim-nuclear-weapons-expansion.html",
-      "source": "CNBC",
-      "published": "2026-11-26T05:16:38Z",
+      "title": "We are living in perilous times if Nvidia CEO Jensen Huang dictates your 401(k) balance",
+      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T15:30:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "1Password hacker stole customer names and emails, but vaults safe",
-      "url": "https://cointelegraph.com/news/1password-hacker-stole-customer-names-and-emails-but-vaults-safe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-26T04:55:16Z",
+      "title": "Spain\u2019s Pablo Hern\u00e1ndez de Cos set to lead European Central Bank",
+      "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+      "source": "CNBC",
+      "published": "2026-11-26T15:28:26Z",
+      "topic": "markets",
+      "tags": [
+        "Rates & central banks"
+      ],
+      "watch": false
+    },
+    {
+      "title": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
+      "url": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T15:13:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "This retired professor has reinvented himself \u2014 as a Taylor Swift scholar",
+      "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T14:35:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Spain gives anti-laundering unit power to freeze crypto accounts without a judge",
+      "url": "https://www.coindesk.com/business/2026/11/26/spain-gives-anti-laundering-unit-power-to-freeze-crypto-accounts-without-a-judge",
+      "source": "CoinDesk",
+      "published": "2026-11-26T14:05:58Z",
       "topic": "crypto",
       "tags": [
         "Crypto"
@@ -924,19 +954,153 @@
       "watch": false
     },
     {
-      "title": "South Korea's Kospi leads gains as tech rebound lifts Asia markets",
+      "title": "Nvidia and the whole AI trade aren\u2019t out of the woods \u2014 not by a long shot",
+      "url": "https://www.marketwatch.com/story/nvidia-and-the-whole-ai-trade-arent-out-of-the-woods-not-by-a-long-shot-bccc0025?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T14:00:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Nasdaq exec pushes for common EU rules on tokenized securities",
+      "url": "https://cointelegraph.com/news/nasdaq-exec-eu-wide-legal-framework-tokenized-securities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T13:47:56Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Here\u2019s what happened in crypto today",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T13:45:04Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Futures point to Black Friday gains on Wall Street as global markets welcome U.S. resilience",
+      "url": "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T13:41:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "What is \u2018texture-maxxing\u2019? The food trend putting crunch on the menu",
+      "url": "https://www.cnbc.com/2026/11/26/texture-maxxing-food-trends-gen-z.html",
+      "source": "CNBC",
+      "published": "2026-11-26T13:34:51Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "7 bizarre things crypto whales spent a fortune on",
+      "url": "https://cointelegraph.com/magazine/7-bizarre-things-crypto-whales-spent-a-fortune-on?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T13:30:00Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Roth IRA conversions aren\u2019t free money. Watch out for these 5 costly mistakes.",
+      "url": "https://www.marketwatch.com/story/roth-ira-conversions-arent-free-money-watch-out-for-these-5-costly-mistakes-39b182d3?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T13:24:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Semiconductor chips are the new oil. Here's why",
+      "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+      "source": "CNBC",
+      "published": "2026-11-26T13:19:25Z",
+      "topic": "markets",
+      "tags": [
+        "Energy"
+      ],
+      "watch": false
+    },
+    {
+      "title": "\u2018I felt so seen\u2019: Why families across America are laughing \u2014 and crying \u2014 over SNL\u2019s \u2018Sister\u2019 sketch",
+      "url": "https://www.marketwatch.com/story/so-sad-and-so-true-has-your-family-talked-about-snls-sister-sketch-yet-19bf9d67?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T13:06:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+      "source": "CNBC",
+      "published": "2026-11-26T12:46:55Z",
+      "topic": "markets",
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Standard Chartered's Zodia Custody suffers data breach, exposing client information",
+      "url": "https://www.coindesk.com/tech/2026/11/26/standard-chartered-s-zodia-custody-suffers-data-breach-exposing-client-information",
+      "source": "CoinDesk",
+      "published": "2026-11-26T12:38:51Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Capital preservation rather than chasing the market is how hedge funds are negotiating this volatility",
+      "url": "https://www.marketwatch.com/story/capital-preservation-rather-than-chasing-the-market-higher-is-how-hedge-funds-are-negotiating-market-volatility-f4288b71?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T12:37:00Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
       "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
       "source": "CNBC",
-      "published": "2026-11-26T04:49:03Z",
+      "published": "2026-11-26T12:22:25Z",
       "topic": "markets",
-      "tags": [],
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": true
+    },
+    {
+      "title": "Bitcoin ETFs are bleeding cash and the Fed is unlikely to help",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help",
+      "source": "CoinDesk",
+      "published": "2026-11-26T12:14:46Z",
+      "topic": "crypto",
+      "tags": [
+        "Rates & central banks",
+        "Crypto"
+      ],
       "watch": false
     },
     {
-      "title": "Bill to lock up U.S. government bitcoin for 20 years advances to full House",
-      "url": "https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house",
-      "source": "CoinDesk",
-      "published": "2026-11-26T04:46:01Z",
+      "title": "Vitalik Buterin calls for verifiable chips as hardware wallet threats evolve",
+      "url": "https://cointelegraph.com/news/vitalik-buterin-verifiable-chips-hardware-wallet-threats-evolve?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T12:13:59Z",
       "topic": "crypto",
       "tags": [
         "Crypto"
@@ -944,10 +1108,85 @@
       "watch": false
     },
     {
-      "title": "Senate Democrats urge SEC to scrap crypto, tokenized stock exemptions",
-      "url": "https://cointelegraph.com/news/senate-democrats-urge-sec-to-scrap-crypto-tokenized-stock-exemptions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Standard Chartered\u2019s Zodia Custody suffers data breach",
+      "url": "https://cointelegraph.com/news/standard-chartered-zodia-suffers-data-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "source": "Cointelegraph",
-      "published": "2026-11-26T04:24:45Z",
+      "published": "2026-11-26T11:37:06Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Hong Kong-based crypto trading firm Auros is winding down operations",
+      "url": "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources",
+      "source": "CoinDesk",
+      "published": "2026-11-26T11:27:50Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Bitcoin price eyes $61K as Talos warns of thin Thanksgiving liquidity",
+      "url": "https://cointelegraph.com/markets/bitcoin-price-talos-warns-thin-thanksgiving-liquidity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T11:22:59Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Switzerland\u2019s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
+      "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
+      "source": "CNBC",
+      "published": "2026-11-26T11:17:39Z",
+      "topic": "markets",
+      "tags": [],
+      "watch": false
+    },
+    {
+      "title": "Bitcoin little changed, DeFi tokens lead the bounce as U.S. marks Thanksgiving",
+      "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving",
+      "source": "CoinDesk",
+      "published": "2026-11-26T11:17:22Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Nvidia shipment freeze and U.S. chip curbs put AI stocks under pressure",
+      "url": "https://www.coindesk.com/markets/2026/11/26/nvidia-shipment-freeze-and-u-s-chip-curbs-put-ai-stocks-under-pressure",
+      "source": "CoinDesk",
+      "published": "2026-11-26T10:56:08Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Trump, NATO chief caution Russia as attacks on Ukraine\u2019s energy infrastructure intensify",
+      "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+      "source": "CNBC",
+      "published": "2026-11-26T10:45:45Z",
+      "topic": "markets",
+      "tags": [
+        "Geopolitics & trade"
+      ],
+      "watch": false
+    },
+    {
+      "title": "New York Attorney General wins $1.4 billion ruling against founders of crypto trading firm NovaTech",
+      "url": "https://www.coindesk.com/policy/2026/11/26/new-york-attorney-general-wins-usd1-4-billion-ruling-against-founders-of-crypto-trading-firm-novatech",
+      "source": "CoinDesk",
+      "published": "2026-11-26T10:40:33Z",
       "topic": "crypto",
       "tags": [
         "Regulation & legal",
@@ -956,235 +1195,145 @@
       "watch": false
     },
     {
-      "title": "Hedge funds are no longer just for the rich. They\u2019re wooing everyday investors",
-      "url": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
-      "source": "CNBC",
-      "published": "2026-11-26T04:20:18Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "How Trump\u2019s latest tariff moves hand India an edge over rival Asian exporters",
-      "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
-      "source": "CNBC",
-      "published": "2026-11-26T04:12:18Z",
-      "topic": "markets",
+      "title": "Zcash devs urge users to migrate 2% of ZEC supply to accelerate Sapling pool retirement",
+      "url": "https://cointelegraph.com/news/zcash-users-migrate-zec-supply-sapling-pool-retirement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T10:15:28Z",
+      "topic": "crypto",
       "tags": [
-        "Geopolitics & trade"
+        "Crypto"
       ],
       "watch": false
     },
     {
-      "title": "Judge blocks FCC early-renewal process for Disney-owned ABC stations, for now",
-      "url": "https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html",
-      "source": "CNBC",
-      "published": "2026-11-26T04:00:15Z",
+      "title": "The tech rout should bottom soon, with a 25% rally for the S&P 500 to follow, says Deutsche Bank",
+      "url": "https://www.marketwatch.com/story/the-tech-rout-should-bottom-soon-with-a-25-rally-for-the-s-p-500-to-follow-says-deutsche-bank-c9070bf6?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T10:11:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "South Korea upgrades growth forecast, raises benchmark rates to highest in two years",
-      "url": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
+      "title": "Bitcoin ETF November outflows top $5B, Morgan Stanley bucks trend",
+      "url": "https://cointelegraph.com/markets/morgan-stanley-bitcoin-etf-trend-outflows-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T09:42:34Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Switzerland\u2019s first spot Bitcoin ETF ticks up 0.6% in opening hour",
+      "url": "https://cointelegraph.com/markets/bit-debuts-switzerlands-first-spot-bitcoin-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T09:18:15Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
+      "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
       "source": "CNBC",
-      "published": "2026-11-26T03:32:53Z",
+      "published": "2026-11-26T09:02:30Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-      "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+      "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
+      "url": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
       "source": "CNBC",
-      "published": "2026-11-26T03:19:44Z",
+      "published": "2026-11-26T08:59:11Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "\u2018Your booth is waiting\u2019: Denny\u2019s welcomes Jensen Huang back as Nvidia CEO",
-      "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+      "title": "$7 billion of bitcoin options expire Friday, and the biggest bets look starkly different from October",
+      "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october",
+      "source": "CoinDesk",
+      "published": "2026-11-26T08:01:33Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Taking on Starlink: Europe\u2019s largest satellite factory opens in push to rival Musk",
+      "url": "https://www.cnbc.com/2026/11/26/starlink-satellites-aerospacelab-factory-belgium.html",
       "source": "CNBC",
-      "published": "2026-11-26T03:13:43Z",
+      "published": "2026-11-26T07:45:05Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "K-beauty stocks rally as Korean brands top Amazon bestseller lists globally ahead of Black Friday",
-      "url": "https://www.cnbc.com/2026/11/26/k-beauty-firms-amazon-sales-black-friday.html",
+      "title": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
+      "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
       "source": "CNBC",
-      "published": "2026-11-26T03:09:47Z",
+      "published": "2026-11-26T07:30:11Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-      "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-      "source": "CNBC",
-      "published": "2026-11-26T02:35:39Z",
+      "title": "Is the stock market open for Thanksgiving? The answer might surprise you.",
+      "url": "https://www.marketwatch.com/story/is-the-stock-market-open-for-thanksgiving-the-answer-might-surprise-you-e68114d4?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-26T07:16:00Z",
       "topic": "markets",
       "tags": [],
       "watch": false
     },
     {
-      "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
+      "title": "Zcash developers want to phase out older privacy system as a precaution against future attacks",
+      "url": "https://www.coindesk.com/tech/2026/11/26/zcash-developers-want-users-to-move-usd300-million-out-of-an-older-privacy-system",
+      "source": "CoinDesk",
+      "published": "2026-11-26T07:09:25Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Over 1,000 Bitcoin miners were tricked into working for a thief by a fake internet route",
+      "url": "https://www.coindesk.com/markets/2026/11/26/hackers-hijacked-1-000-plus-bitcoin-mines-in-one-second-by-faking-internet-routes",
+      "source": "CoinDesk",
+      "published": "2026-11-26T06:19:09Z",
+      "topic": "crypto",
+      "tags": [
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "UK regulator plans tighter DeFi rules, citing $6.3B Binance hack: Report",
+      "url": "https://cointelegraph.com/news/uk-fca-defi-regulation-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-11-26T05:53:08Z",
+      "topic": "crypto",
+      "tags": [
+        "Regulation & legal",
+        "Crypto"
+      ],
+      "watch": false
+    },
+    {
+      "title": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
       "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
       "source": "CNBC",
-      "published": "2026-11-26T01:34:58Z",
+      "published": "2026-11-26T05:36:01Z",
       "topic": "markets",
       "tags": [
         "Rates & central banks"
-      ],
-      "watch": false
-    },
-    {
-      "title": "AI labs likely sitting on cryptography \u2018bombshells,\u2019 computer scientist says",
-      "url": "https://cointelegraph.com/news/ai-labs-likely-sitting-on-cryptography-bombshells-computer-scientist-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-26T01:33:20Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "We are living in perilous times if Nvidia\u2019s Jensen Huang dictates your 401(k) balance",
-      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-26T01:15:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Why this stock-market selloff is probably going to get worse before it gets better",
-      "url": "https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-26T00:33:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who\u2019s to blame?",
-      "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T23:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "I\u2019m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-      "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T23:30:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "I\u2019ve been married for 58 years. It\u2019s \u2018our\u2019 money, not \u2018his\u2019 and \u2018hers.\u2019 Why do so many couples keep their finances separate?",
-      "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T23:00:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "I hate that Jensen Huang is back at Nvidia, but I love what it\u2019s done for my 401(k). Am I a hypocrite?",
-      "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T22:45:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Here\u2019s what happened in crypto today",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T22:33:13Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Oracle, CoreWeave and other tech stocks bounce back after selloff",
-      "url": "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T22:16:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Nvidia\u2019s stock has given back a big chunk of Monday\u2019s rally as dip buyers cash in",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-is-giving-back-more-than-half-of-mondays-rally-as-dip-buyers-cash-in-ee4fa52c?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T22:11:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Switzerland clears 57 jurisdictions for crypto tax data sharing",
-      "url": "https://cointelegraph.com/news/switzerland-clears-57-jurisdictions-crypto-tax-data-sharing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T21:53:38Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Elon Musk and SpaceX to donate roughly $17.8 billion to \u2018Trump accounts\u2019",
-      "url": "https://www.marketwatch.com/story/elon-musk-and-spacex-to-donate-roughly-17-8-billion-to-trump-accounts-071c12e1?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T21:50:00Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "HP\u2019s stock is a standout gainer in the tech selloff, as an earnings beat still matters",
-      "url": "https://www.marketwatch.com/story/hps-stock-is-a-standout-gainer-in-the-tech-rout-as-an-earnings-beat-still-matters-8f6c76ad?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-25T21:36:00Z",
-      "topic": "markets",
-      "tags": [
-        "Earnings"
-      ],
-      "watch": true
-    },
-    {
-      "title": "Braiins warns of Bitcoin mining attacks affecting over 1,000 sites",
-      "url": "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T21:22:19Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Why ECB collateral eligibility could boost demand for tokenized bonds",
-      "url": "https://cointelegraph.com/news/why-ecb-collateral-eligibility-could-boost-demand-tokenized-bonds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T21:11:39Z",
-      "topic": "crypto",
-      "tags": [
-        "Rates & central banks",
-        "Crypto"
       ],
       "watch": false
     },
@@ -1207,65 +1356,6 @@
       "watch": false
     },
     {
-      "title": "Ethereum Foundation backs Keccak-256 to counter quantum, AI threats",
-      "url": "https://cointelegraph.com/news/ethereum-foundation-keccak-256-counter-quantum-ai-threats?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T18:54:51Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "French Senate blocks new crypto tax and wallet list critics called a kidnapping risk",
-      "url": "https://www.coindesk.com/business/2026/11/25/french-senate-blocks-new-crypto-tax-and-wallet-list-critics-called-a-kidnapping-risk",
-      "source": "CoinDesk",
-      "published": "2026-11-25T18:24:47Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "US inflation rises to 3.8% ahead of December Fed meeting, clouding crypto outlook",
-      "url": "https://cointelegraph.com/news/us-inflation-rises-december-fed-meeting-clouding-crypto-outlook?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T17:53:10Z",
-      "topic": "crypto",
-      "tags": [
-        "Rates & central banks",
-        "Inflation & jobs",
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
-      "title": "'This time actually seems different': Crypto veterans brace for more pain as bitcoin tumbles",
-      "url": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles",
-      "source": "CoinDesk",
-      "published": "2026-11-25T17:38:33Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
-      "title": "Bitcoin falls toward $57K amid US tariff fears, hot PCE data as Nasdaq drops 4%",
-      "url": "https://cointelegraph.com/markets/bitcoin-falls-57k-us-tariff-pce-data-nasdaq-drops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "Cointelegraph",
-      "published": "2026-11-25T17:33:22Z",
-      "topic": "crypto",
-      "tags": [
-        "Inflation & jobs",
-        "Geopolitics & trade",
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
       "title": "Prediction markets push OpenAI IPO expectations later into 2027",
       "url": "https://www.cnbc.com/2026/11/25/openai-ipo-odds-2027-prediction-markets.html",
       "source": "CNBC",
@@ -1273,96 +1363,6 @@
       "topic": "markets",
       "tags": [],
       "watch": false
-    },
-    {
-      "title": "EU bank watchdog seeks European Commission rules for crypto firms offering DeFi lending",
-      "url": "https://www.coindesk.com/policy/2026/11/25/eu-bank-watchdog-seeks-european-commission-rules-for-crypto-firms-offering-defi-lending",
-      "source": "CoinDesk",
-      "published": "2026-11-25T16:02:31Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Ukrainian lawmakers pass crypto tax and regulation bill expected to bring in $330 million",
-      "url": "https://www.coindesk.com/business/2026/11/25/ukrainian-lawmakers-pass-crypto-tax-and-regulation-bill-expected-to-bring-in-usd330-million",
-      "source": "CoinDesk",
-      "published": "2026-11-25T16:02:07Z",
-      "topic": "crypto",
-      "tags": [
-        "Regulation & legal",
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Crypto Long & Short: Bitcoin investors can\u2019t keep ignoring Japan",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/11/25/crypto-long-and-short-bitcoin-investors-can-t-keep-ignoring-japan",
-      "source": "CoinDesk",
-      "published": "2026-11-25T15:59:44Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "South Korean crypto exchange Bithumb warns of phishing after deeper October breach probe",
-      "url": "https://www.coindesk.com/tech/2026/11/25/south-korean-crypto-exchange-bithumb-warns-of-phishing-after-deeper-october-breach-probe",
-      "source": "CoinDesk",
-      "published": "2026-11-25T14:47:17Z",
-      "topic": "crypto",
-      "tags": [
-        "Regulation & legal",
-        "Crypto"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-      "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-      "source": "CNBC",
-      "published": "2026-11-25T14:29:00Z",
-      "topic": "markets",
-      "tags": [
-        "Geopolitics & trade"
-      ],
-      "watch": false
-    },
-    {
-      "title": "Liesman: Nvidia whiplash tests Kevin Warsh\u2019s push to read market signals",
-      "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
-      "source": "CNBC",
-      "published": "2026-11-25T12:26:41Z",
-      "topic": "markets",
-      "tags": [],
-      "watch": false
-    },
-    {
-      "title": "Fed\u2019s preferred inflation gauge lands with a December rate increase already priced in",
-      "url": "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in",
-      "source": "CoinDesk",
-      "published": "2026-11-25T12:18:46Z",
-      "topic": "crypto",
-      "tags": [
-        "Rates & central banks",
-        "Inflation & jobs",
-        "Crypto"
-      ],
-      "watch": true
-    },
-    {
-      "title": "Ether, DeFi fall twice as hard as bitcoin as equities selloff resumes",
-      "url": "https://www.coindesk.com/markets/2026/11/25/ether-defi-fall-twice-as-hard-as-bitcoin-as-equities-selloff-resumes",
-      "source": "CoinDesk",
-      "published": "2026-11-25T11:57:50Z",
-      "topic": "crypto",
-      "tags": [
-        "Crypto"
-      ],
-      "watch": true
     }
   ],
   "errors": [],
